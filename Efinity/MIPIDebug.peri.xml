@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<efxpt:design_db name="MIPIDebug" device_def="T20F169" location="D:\Efinix\Design\Hikvision\Release\MIPIDebug1.6\Efinity" version="2019.3.272" db_version="20193999" last_change_date="Wed Feb  5 01:32:58 2020" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+    <efxpt:device_info>
+        <efxpt:iobank_info>
+            <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1B_1C_1D" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="2A" iostd="1.2 V"/>
+            <efxpt:iobank name="2B" iostd="1.2 V"/>
+            <efxpt:iobank name="3A_3B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3C_3D_3E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="BR_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TL_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TR_CORNER" iostd="1.2 V"/>
+        </efxpt:iobank_info>
+        <efxpt:ctrl_info>
+            <efxpt:ctrl name="cfg" ctrl_def="CONFIG_CTRL0" clock_name="" is_clk_invert="false" cbsel_bus_name="cfg_CBSEL" config_ctrl_name="cfg_CONFIG" ena_capture_name="cfg_ENA" error_status_name="cfg_ERROR" um_signal_status_name="cfg_USR_STATUS" is_remote_update_enable="false" is_user_mode_enable="false"/>
+        </efxpt:ctrl_info>
+    </efxpt:device_info>
+    <efxpt:gpio_info device_def="T20F169">
+        <efxpt:gpio name="Clk50M" gpio_def="GPIOR_76" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="Clk50M" name_ddio_lo="" conn_type="alternate" is_register="false" clock_name="" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="Clk74M25" gpio_def="GPIOL_75" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="Clk74M25" name_ddio_lo="" conn_type="alternate" is_register="false" clock_name="" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="LED[0]" gpio_def="GPIOL_20" mode="output" bus_name="LED" is_lvds_gpio="false">
+            <efxpt:output_config name="LED[0]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="LED[1]" gpio_def="GPIOL_21" mode="output" bus_name="LED" is_lvds_gpio="false">
+            <efxpt:output_config name="LED[1]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="MipiRefClk" gpio_def="GPIOR_81" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="MipiRefClk" name_ddio_lo="" conn_type="alternate" is_register="false" clock_name="" is_clock_inverted="false" pull_option="weak pulldown" is_schmitt_trigger="true" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelRxHSync" gpio_def="GPIOR_158" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="PixelRxHSync" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelRxVSync" gpio_def="GPIOB_RXN09" mode="output" bus_name="" is_lvds_gpio="true">
+            <efxpt:output_config name="PixelRxVSync" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelRxValid" gpio_def="GPIOR_151" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="PixelRxValid" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelTxHSync" gpio_def="GPIOB_RXP12" mode="output" bus_name="" is_lvds_gpio="true">
+            <efxpt:output_config name="PixelTxHSync" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelTxVSync" gpio_def="GPIOB_RXN10" mode="output" bus_name="" is_lvds_gpio="true">
+            <efxpt:output_config name="PixelTxVSync" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="PixelTxValid" gpio_def="GPIOR_120" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="PixelTxValid" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="3" is_slew_rate="true" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:global_unused_config state="input with weak pulldown"/>
+        <efxpt:bus name="LED" mode="output" msb="1" lsb="0"/>
+    </efxpt:gpio_info>
+    <efxpt:pll_info>
+        <efxpt:pll name="MipiTxPll" pll_def="PLL_TR0" ref_clock_name="" ref_clock_freq="50.00" multiplier="30" pre_divider="1" post_divider="1" reset_name="" locked_name="PllLocked[1]" is_ipfrz="false" is_bypass_lock="true">
+            <efxpt:output_clock name="MipiTxEscClk" number="0" out_divider="75" adv_out_phase_shift="0"/>
+            <efxpt:output_clock name="MipiTxPixelClk" number="1" out_divider="15" adv_out_phase_shift="0"/>
+            <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="" feedback_mode="internal"/>
+        </efxpt:pll>
+        <efxpt:pll name="MipiRxPll" pll_def="PLL_TR1" ref_clock_name="" ref_clock_freq="50.00" multiplier="30" pre_divider="1" post_divider="1" reset_name="" locked_name="PllLocked[2]" is_ipfrz="false" is_bypass_lock="true">
+            <efxpt:output_clock name="MipiRxCalClk" number="0" out_divider="15" adv_out_phase_shift="0"/>
+            <efxpt:output_clock name="MipiRxPixelClk" number="1" out_divider="15" adv_out_phase_shift="0"/>
+            <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="" feedback_mode="internal"/>
+        </efxpt:pll>
+    </efxpt:pll_info>
+    <efxpt:lvds_info/>
+    <efxpt:mipi_info>
+        <efxpt:mipi name="MMipiTx" mipi_def="MIPI_TX1" ops_type="tx">
+            <efxpt:mtx_info ref_clock_freq="26.0" phy_tx_freq_code="364" is_cont_phy_clocking="true" esc_clock_freq="20.0">
+                <efxpt:gen_pin>
+                    <efxpt:pin name="MMipiTx_ULPS_ENTER" type_name="ULPS_ENTER" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_FRAME_MODE" type_name="FRAME_MODE" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_RSTN" type_name="RSTN" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_TYPE" type_name="TYPE" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_ULPS_CLK_ENTER" type_name="ULPS_CLK_ENTER" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_DPHY_RSTN" type_name="DPHY_RSTN" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_HRES" type_name="HRES" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_VALID" type_name="VALID" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_ULPS_CLK_EXIT" type_name="ULPS_CLK_EXIT" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_TXDP" type_name="TXDP" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_VC" type_name="VC" is_bus="true"/>
+                    <efxpt:pin name="MipiTxEscClk" type_name="ESC_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MMipiTx_DATA" type_name="DATA" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_HSYNC" type_name="HSYNC" is_bus="false"/>
+                    <efxpt:pin name="MipiRxPixelClk" type_name="PIXEL_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MMipiTx_TXDN" type_name="TXDN" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_LANES" type_name="LANES" is_bus="true"/>
+                    <efxpt:pin name="MMipiTx_VSYNC" type_name="VSYNC" is_bus="false"/>
+                    <efxpt:pin name="MMipiTx_ULPS_EXIT" type_name="ULPS_EXIT" is_bus="true"/>
+                </efxpt:gen_pin>
+                <efxpt:phy_lane lane_id="0" logical_lane_id="4" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="1" logical_lane_id="0" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="2" logical_lane_id="1" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="3" logical_lane_id="2" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="4" logical_lane_id="3" is_pn_swap="false"/>
+                <efxpt:tx_timing t_clk_post="1" t_clk_trail="11" t_clk_prepare="1" t_clk_zero="1" t_clk_pre="1" t_hs_prepare="4" t_hs_zero="1" t_hs_trail="13"/>
+            </efxpt:mtx_info>
+        </efxpt:mipi>
+        <efxpt:mipi name="MipiRx" mipi_def="MIPI_RX0" ops_type="rx">
+            <efxpt:mrx_info dphy_calib_clock_freq="100.0">
+                <efxpt:gen_pin>
+                    <efxpt:pin name="MipiRx_RXDN" type_name="RXDN" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_TST_LOAD" type_name="TST_LOAD" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_TYPE" type_name="TYPE" is_bus="true"/>
+                    <efxpt:pin name="MipiRxCalClk" type_name="CAL_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MipiRx_DPHY_RSTN" type_name="DPHY_RSTN" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_VSYNC" type_name="VSYNC" is_bus="true"/>
+                    <efxpt:pin name="MipiRxPixelClk" type_name="PIXEL_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MipiRx_DPHY_TST_CLK" type_name="DPHY_TST_CLK" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_VC_ENA" type_name="VC_ENA" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_HSYNC" type_name="HSYNC" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_LANES" type_name="LANES" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_VC" type_name="VC" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_VALID" type_name="VALID" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_RXDP" type_name="RXDP" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_RSTN" type_name="RSTN" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_TST_CLK" type_name="TST_CLK" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_CNT" type_name="CNT" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_TST_DATA" type_name="TST_DATA" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_TST_OUT" type_name="TST_OUT" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_ERROR" type_name="ERROR" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_CLEAR" type_name="CLEAR" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_ULPS" type_name="ULPS" is_bus="true"/>
+                    <efxpt:pin name="MipiRx_ULPS_CLK" type_name="ULPS_CLK" is_bus="false"/>
+                    <efxpt:pin name="MipiRx_DATA" type_name="DATA" is_bus="true"/>
+                </efxpt:gen_pin>
+                <efxpt:phy_lane lane_id="0" logical_lane_id="4" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="1" logical_lane_id="0" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="2" logical_lane_id="1" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="3" logical_lane_id="2" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="4" logical_lane_id="3" is_pn_swap="false"/>
+                <efxpt:rx_timing t_clk_settle="17" t_hs_settle="10"/>
+            </efxpt:mrx_info>
+        </efxpt:mipi>
+        <efxpt:mipi name="MipiTx" mipi_def="MIPI_TX0" ops_type="tx">
+            <efxpt:mtx_info ref_clock_freq="26.0" phy_tx_freq_code="364" is_cont_phy_clocking="true" esc_clock_freq="20.0">
+                <efxpt:gen_pin>
+                    <efxpt:pin name="MipiTx_ULPS_ENTER" type_name="ULPS_ENTER" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_FRAME_MODE" type_name="FRAME_MODE" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_RSTN" type_name="RSTN" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_TYPE" type_name="TYPE" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_ULPS_CLK_ENTER" type_name="ULPS_CLK_ENTER" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_DPHY_RSTN" type_name="DPHY_RSTN" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_HRES" type_name="HRES" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_VALID" type_name="VALID" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_ULPS_CLK_EXIT" type_name="ULPS_CLK_EXIT" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_TXDP" type_name="TXDP" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_VC" type_name="VC" is_bus="true"/>
+                    <efxpt:pin name="MipiTxEscClk" type_name="ESC_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MipiTx_DATA" type_name="DATA" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_HSYNC" type_name="HSYNC" is_bus="false"/>
+                    <efxpt:pin name="MipiRxPixelClk" type_name="PIXEL_CLK" is_bus="false" is_clk="true" is_clk_invert="false"/>
+                    <efxpt:pin name="MipiTx_TXDN" type_name="TXDN" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_LANES" type_name="LANES" is_bus="true"/>
+                    <efxpt:pin name="MipiTx_VSYNC" type_name="VSYNC" is_bus="false"/>
+                    <efxpt:pin name="MipiTx_ULPS_EXIT" type_name="ULPS_EXIT" is_bus="true"/>
+                </efxpt:gen_pin>
+                <efxpt:phy_lane lane_id="0" logical_lane_id="4" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="1" logical_lane_id="0" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="2" logical_lane_id="1" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="3" logical_lane_id="2" is_pn_swap="false"/>
+                <efxpt:phy_lane lane_id="4" logical_lane_id="3" is_pn_swap="false"/>
+                <efxpt:tx_timing t_clk_post="1" t_clk_trail="11" t_clk_prepare="1" t_clk_zero="1" t_clk_pre="1" t_hs_prepare="4" t_hs_zero="1" t_hs_trail="13"/>
+            </efxpt:mtx_info>
+        </efxpt:mipi>
+    </efxpt:mipi_info>
+    <efxpt:jtag_info>
+        <efxpt:jtag name="jtag_inst1" jtag_def="JTAG_USER1">
+            <efxpt:gen_pin>
+                <efxpt:pin name="jtag_inst1_UPDATE" type_name="UPDATE" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_DRCK" type_name="DRCK" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_SHIFT" type_name="SHIFT" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_TCK" type_name="TCK" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_RESET" type_name="RESET" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_CAPTURE" type_name="CAPTURE" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_SEL" type_name="SEL" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_TDO" type_name="TDO" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_TDI" type_name="TDI" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_TMS" type_name="TMS" is_bus="false"/>
+                <efxpt:pin name="jtag_inst1_RUNTEST" type_name="RUNTEST" is_bus="false"/>
+            </efxpt:gen_pin>
+        </efxpt:jtag>
+    </efxpt:jtag_info>
+</efxpt:design_db>

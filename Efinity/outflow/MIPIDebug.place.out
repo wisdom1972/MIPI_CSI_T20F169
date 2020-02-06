@@ -1,0 +1,298 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Compiled: Jan 16 2020.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F169" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/MIPIDebug.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 2.08367 seconds.
+	VDB Netlist Checker took 2.08 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 174.852 MB, end = 174.852 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 62.904 MB, end = 62.904 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 65.112 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv".
+Creating interface clock buffer MipiRxCalClk~CLKBUF.
+Creating interface clock buffer MipiTxEscClk~CLKBUF.
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #1(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #3(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #8(jtag_inst1_TMS) has no fanout.
+Removing input.
+logical_block #13(PllLocked[0]) has no fanout.
+Removing input.
+logical_block #342(MipiRx_ULPS_CLK) has no fanout.
+Removing input.
+logical_block #343(MipiRx_ULPS[3]) has no fanout.
+Removing input.
+logical_block #344(MipiRx_ULPS[2]) has no fanout.
+Removing input.
+logical_block #345(MipiRx_ULPS[1]) has no fanout.
+Removing input.
+logical_block #346(MipiRx_ULPS[0]) has no fanout.
+Removing input.
+Pass 0: Swept away 9 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 9 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 9 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/MIPIDebug.vdb".
+Netlist pre-processing took 2.4172 seconds.
+	Netlist pre-processing took 2.42 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 142.312 MB, end = 192.6 MB, delta = 50.288 MB
+Netlist pre-processing resident set memory usage: begin = 29.792 MB, end = 80.812 MB, delta = 51.02 MB
+	Netlist pre-processing peak resident set memory usage = 80.812 MB
+***** Ending stage netlist pre-processing *****
+***** Beginning stage packing ... *****
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+Generate proto netlist for file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.net_proto" took 0.013149 seconds
+Creating IO constraints file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.io_place'
+Packing took 2.80506 seconds.
+	Packing took 2.81 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 192.6 MB, end = 267.592 MB, delta = 74.992 MB
+Packing resident set memory usage: begin = 80.812 MB, end = 156.08 MB, delta = 75.268 MB
+	Packing peak resident set memory usage = 156.08 MB
+***** Ending stage packing *****
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.net_proto
+Read proto netlist for file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.net_proto" took 0.003191 seconds
+Setup net and block data structure took 0.19779 seconds
+Packed netlist loading took 0.216224 seconds.
+	Packed netlist loading took 0.22 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 267.592 MB, end = 267.592 MB, delta = 0 MB
+Packed netlist loading resident set memory usage: begin = 156.08 MB, end = 156.116 MB, delta = 0.036 MB
+	Packed netlist loading peak resident set memory usage = 158.936 MB
+***** Ending stage packed netlist loading *****
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+WARNING(1): [SDC line 65] Specified get_ports name or regular expression "MipiRx_ULPS_CLK" does not correspond to any ports.
+WARNING(2): [SDC line 66] Specified get_ports name or regular expression "MipiRx_ULPS_CLK" does not correspond to any ports.
+WARNING(3): [SDC line 67] Specified get_ports name or regular expression "MipiRx_ULPS[3]" does not correspond to any ports.
+WARNING(4): [SDC line 67] Specified get_ports name or regular expression "MipiRx_ULPS[2]" does not correspond to any ports.
+WARNING(5): [SDC line 67] Specified get_ports name or regular expression "MipiRx_ULPS[1]" does not correspond to any ports.
+WARNING(6): [SDC line 67] Specified get_ports name or regular expression "MipiRx_ULPS[0]" does not correspond to any ports.
+WARNING(7): [SDC line 68] Specified get_ports name or regular expression "MipiRx_ULPS[3]" does not correspond to any ports.
+WARNING(8): [SDC line 68] Specified get_ports name or regular expression "MipiRx_ULPS[2]" does not correspond to any ports.
+WARNING(9): [SDC line 68] Specified get_ports name or regular expression "MipiRx_ULPS[1]" does not correspond to any ports.
+WARNING(10): [SDC line 68] Specified get_ports name or regular expression "MipiRx_ULPS[0]" does not correspond to any ports.
+WARNING(11): [SDC line 127] Specified get_ports name or regular expression "jtag_inst1_RUNTEST" does not correspond to any ports.
+WARNING(12): [SDC line 128] Specified get_ports name or regular expression "jtag_inst1_RUNTEST" does not correspond to any ports.
+WARNING(13): [SDC line 123] Input jtag_inst1_CAPTURE is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(14): [SDC line 124] Input jtag_inst1_CAPTURE is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(15): [SDC line 125] Input jtag_inst1_RESET is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(16): [SDC line 126] Input jtag_inst1_RESET is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(17): [SDC line 129] Input jtag_inst1_SEL is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(18): [SDC line 130] Input jtag_inst1_SEL is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(19): [SDC line 131] Input jtag_inst1_UPDATE is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(20): [SDC line 132] Input jtag_inst1_UPDATE is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(21): [SDC line 133] Input jtag_inst1_SHIFT is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(22): [SDC line 134] Input jtag_inst1_SHIFT is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(23): Ignoring input constraints that were set with invalid clock.
+WARNING(24): [SDC line 121] Output jtag_inst1_TDO is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(25): [SDC line 122] Output jtag_inst1_TDO is associated with an unconstrained clock jtag_inst1_TCK.
+WARNING(26): Ignoring output constraints that were set with invalid clock.
+
+SDC file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/TimingConstraint.SDC' parsed successfully.
+4 clocks (including virtual clocks), 190 inputs and 354 outputs were constrained.
+
+WARNING(27): There are 1778 pins with no clock driven by root clock: jtag_inst1_TCK
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv".
+Writing IO placement constraints to '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.io'.
+
+Reading placement constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.io'.
+WARNING(28): [Line 13] Block jtag_inst1_DRCK invalid, no such block.
+WARNING(29): [Line 15] Block jtag_inst1_TMS invalid, no such block.
+WARNING(30): [Line 18] Block jtag_inst1_RUNTEST invalid, no such block.
+WARNING(31): [Line 235] Block MipiRx_ULPS_CLK invalid, no such block.
+WARNING(32): [Line 237] Block MipiRx_ULPS[0] invalid, no such block.
+WARNING(33): [Line 240] Block MipiRx_ULPS[1] invalid, no such block.
+WARNING(34): [Line 242] Block MipiRx_ULPS[2] invalid, no such block.
+WARNING(35): [Line 245] Block MipiRx_ULPS[3] invalid, no such block.
+
+Reading placement constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.io_place'.
+WARNING(36): Clock input pad, jtag_inst1_TCK, is placed at a GPIO location. Expect extra clock skew
+WARNING(37): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
+***** Ending stage initial placement *****
+***** Beginning stage placement ... *****
+memory map at hier_level memory(0)/mem_blk(0)
+mult map at hier_level mult(0)/mult_blk(0)
+Starting Global Placer ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps) Convergence
+ ----------     -------  --------------     -------
+          1    11753536            3529         2.4%
+          2    11974642            2742         4.2%
+          3     8127458            3101         6.8%
+          4     6632113            2408         9.4%
+          5     3465634             140        15.8%
+          6     2185690              89        21.5%
+          7     1628442            -584        24.6%
+          8     1282211            -597        28.0%
+          9     1256180            -247        29.9%
+         10     1062647           -1094        32.0%
+         11      910920            -806        33.7%
+         12      691731           -1083        36.5%
+         13      483222            -150        36.6%
+         14      387502            -588        37.8%
+         15      320504           -1270        38.8%
+         16      297175            -581        40.5%
+         17      273579            -874        43.0%
+         18      264674             123        43.0%
+         19      244000           -1178        44.8%
+         20      227715            -643        45.1%
+         21      216733              18        48.7%
+         22      207576            -212        49.2%
+         23      205111            -712        50.8%
+         24      203707           -1030        51.1%
+         25      188200            -421        53.7%
+         26      180949            -803        55.3%
+         27      174754            -846        56.8%
+         28      170415           -1311        59.4%
+         29      164912            -679        60.2%
+         30      166008            -856        60.8%
+         31      160431            -630        62.1%
+         32      158907            -172        64.0%
+         33      156574            -121        65.3%
+         34      152135           -1309        66.7%
+         35      148162           -1038        68.5%
+         36      146834           -1071        69.4%
+         37      147145            -736        70.0%
+         38      144947           -1680        71.6%
+         39      148200           -1061        72.3%
+         40      143876           -1265        72.8%
+         41      142994           -2050        74.6%
+         42      140895           -2166        76.2%
+         43      138882           -1204        76.6%
+         44      137439           -2074        77.4%
+         45      135572           -1459        79.3%
+         46      135540           -2256        79.8%
+         47      134571           -1894        80.6%
+         48      134469           -1607        81.6%
+         49      133786           -1995        82.3%
+         50      132862           -1730        82.6%
+         51      131319           -1704        83.2%
+         52      130057           -1433        83.8%
+         53      129443           -1051        84.4%
+         54      128436           -1594        85.0%
+         55      128278           -1495        85.9%
+         56      127487           -1348        86.3%
+         57      127251           -1497        87.0%
+         58      127941           -1717        87.5%
+         59      128713           -1902        88.1%
+         60      128509           -1877        88.5%
+         61      127424           -1548        89.9%
+         62      127898           -1945        90.1%
+         63      127144           -1729        90.6%
+         64      127146           -1647        90.7%
+         65      127658           -1868        91.2%
+         66      128080           -1589        91.6%
+         67      127878           -1569        91.8%
+         68      128328           -1753        92.6%
+         69      128799           -1753        92.6%
+         70      129283           -1753        92.6%
+         71      129270           -1252        92.6%
+         72      129992           -1678        92.8%
+         73      129535           -1580        93.3%
+         74      130032           -1576        93.8%
+         75      129988           -1807        93.9%
+         76      128995           -1620        93.9%
+         77      129568           -1411        94.5%
+         78      129568           -1431        95.5%
+         79      129507           -1444        96.1%
+         80      129923           -1456        96.3%
+         81      130270           -1441        96.7%
+         82      130549           -1442        97.7%
+Starting Legalization ... 
+Starting Annealer
+The design has 5 global clocks. Will observe clock regions
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      128948            8380        30.0
+          1      112321            8429        30.0
+          2      106300            8289        30.0
+          3       96240            7833        30.0
+          4       86871            7276        30.0
+          5       84002            7207        29.6
+          6       79722            6803        29.0
+          7       78896            6803        28.3
+          8       76184            6819        27.4
+          9       74916            7159        26.6
+         10       73149            6994        25.6
+         11       71435            6933        24.7
+         12       69692            6903        23.8
+         13       68238            6474        22.8
+         14       66977            6371        21.9
+         15       66009            6368        21.0
+         16       65027            6368        20.2
+         17       64537            6641        19.4
+         18       63357            6472        18.5
+         19       62594            6265        17.7
+         20       61828            6281        16.8
+         21       61251            6589        16.0
+         22       60631            6485        15.3
+         23       60046            6486        14.6
+         24       59084            6592        13.9
+         25       58623            6548        13.3
+         26       57959            6324        12.6
+         27       57230            6324        12.0
+         28       56769            6414        11.4
+         29       56227            6415        10.9
+         30       55896            6325        10.4
+         31       55396            5959         9.9
+         32       54970            5926         9.3
+         33       54856            6017         8.9
+         34       54332            6209         8.5
+         35       53902            6209         8.1
+         36       53578            6209         7.7
+         37       53424            6209         7.3
+         38       52976            6209         7.0
+         39       52620            5927         6.7
+         40       52304            5918         6.3
+         41       52232            6213         6.0
+         42       52008            6125         5.7
+         43       51736            5917         5.4
+         44       51598            6107         5.2
+         45       51484            5925         4.9
+         46       50930            5925         4.7
+         47       50558            6107         4.3
+Placement successful: 6618 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.154904 at 57,180
+Congestion-weighted HPWL per net: 6.17652
+
+Reading placement constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.qplace'.
+Finish Realign Types (802 blocks need type change)
+WARNING(38): There are 1778 pins with no clock driven by root clock: jtag_inst1_TCK
+
+Completed placement consistency check successfully.
+
+Placement estimated critical path delay: 5.98588 ns
+Successfully created FPGA place file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.place'
+Placement took 30.5408 seconds.
+	Placement took 30.54 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 267.592 MB, end = 950.184 MB, delta = 682.592 MB
+Placement resident set memory usage: begin = 156.116 MB, end = 344.032 MB, delta = 187.916 MB
+	Placement peak resident set memory usage = 350.636 MB
+***** Ending stage placement *****

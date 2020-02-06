@@ -1,0 +1,484 @@
+
+Efinix Static Timing Analysis Report
+Version: 2019.3.272.1.6 
+Date: Thu Feb  6 12:28:35 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Top-level Entity Name: MIPIDebug
+
+SDC Filename: /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/TimingConstraint.SDC
+
+Timing Model: C4
+	temperature : 0C to 85C
+	voltage : 1.2V +/-50mV
+	speedgrade : 4
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary 
+   2. Clock Relationship Summary 
+   3. Path Details for Max Critical Paths 
+   4. Path Details for Min Critical Paths 
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+Clock Name        Period (ns)   Frequency (MHz)   Waveform   Source Clock Name
+MipiTxEscClk           50.000          20.000         {0.000 25.000}        MipiTxEscClk
+MipiTxPixelClk         10.000         100.000         {0.000 5.000}        MipiTxPixelClk
+MipiRxCalClk           10.000         100.000         {0.000 5.000}        MipiRxCalClk
+MipiRxPixelClk         10.000         100.000         {0.000 5.000}        MipiRxPixelClk
+
+Maximum possible analyzed clocks frequency
+Clock Name        Period (ns)   Frequency (MHz)   Edge
+MipiTxPixelClk          7.536         132.690     (R-R)
+MipiRxPixelClk          7.570         132.092     (R-R)
+
+Geomean max period: 7.553
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+MipiTxPixelClk   MipiTxPixelClk       10.000         2.464     (R-R)
+MipiTxPixelClk   MipiRxPixelClk       10.000         4.713     (R-R)
+MipiRxPixelClk   MipiRxPixelClk       10.000         2.430     (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (MipiRxPixelClk vs MipiRxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : MipiRx_DATA[55]
+Path End      : U4_MipiRxData/U1_PrbsCheck/MipiRxError[6]~FF|D
+Launch Clock  : MipiRxPixelClk (RISE)
+Capture Clock : MipiRxPixelClk (RISE)
+Slack         : 2.43  (required time - arrival time)
+Delay         : 6.303
+
+Logic Level : 4
+Non-global nets on path : 4
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 0
++ Data Path Delay              : 6.42
++ Input Delay                  : 5.14
+--------------------------------------------
+End-of-path arrival time       : 11.56
+
+Constraint                     : 10
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 13.99
+
+
+Data Path
+pin name                                              model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================================================
+ MipiRx_DATA[55]                                       inpad              0.2                    0.2           6          (54,243)
+ MipiRx_DATA[55]                                       io               1.698                  1.898           6          (54,243)
+   Routing elements:  
+     Manhattan distance of X:3, Y:3
+ LUT__27418|I[0]                                       eft              0.267                  2.165           6          (51,240)
+ LUT__27418|in[0]                                      lut                  0                  2.165           6          (51,240)
+ LUT__27418|out                                        lut                  0                  2.165           3          (51,240)
+ LUT__27418|O                                          eft               1.69                  3.856           3          (51,240)
+   Routing elements:  
+     Manhattan distance of X:1, Y:1
+ LUT__27420|I[1]                                       efl              0.222                  4.078           3          (52,239)
+ LUT__27420|in[1]                                      lut                  0                  4.078           3          (52,239)
+ LUT__27420|out                                        lut                  0                  4.078           2          (52,239)
+ LUT__27420|O                                          efl              0.706                  4.784           2          (52,239)
+   Routing elements:  
+     Manhattan distance of X:3, Y:0
+ LUT__27421|I[0]                                       eft              0.267                  5.051           2          (49,239)
+ LUT__27421|in[0]                                      lut                  0                  5.051           2          (49,239)
+ LUT__27421|out                                        lut                  0                  5.051           3          (49,239)
+ LUT__27421|O                                          eft              0.984                  6.036           3          (49,239)
+   Routing elements:  
+     Manhattan distance of X:24, Y:0
+ U4_MipiRxData/U1_PrbsCheck/MipiRxError[6]~FF|I[0]     eft              0.267                  6.303           3          (25,239)
+ LUT__21009|in[0]                                      lut                  0                  6.303           3          (25,239)
+ LUT__21009|out                                        lut                  0                  6.303           2          (25,239)
+ U4_MipiRxData/U1_PrbsCheck/MipiRxError[6]~FF|D        ff               0.118                   6.42           2          (25,239)
+
+Capture Clock Path
+pin name                                            model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===============================================================================================================================
+ MipiRxPixelClk                                      inpad               0                      0           2          (160,122)
+ MipiRxPixelClk                                      inpad             0.2                    0.2           2          (160,122)
+ MipiRxPixelClk                                      io                  0                    0.2           2          (160,122)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__1|IO_in                                     gbuf_block       0.32                   0.52           2          (159,122)
+ CLKBUF__1|I                                         gbuf             3.59                   4.11           2          (159,122)
+ CLKBUF__1|O                                         gbuf                0                   4.11         921          (159,122)
+ CLKBUF__1|clkout                                    gbuf_block          0                   4.11         921          (159,122)
+ U4_MipiRxData/U1_PrbsCheck/MipiRxError[6]~FF|CLK    ff                  0                   4.11         921          (25,239)
+
+######################################################################
+Path Detail Report (MipiTxPixelClk vs MipiTxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_MipiTxCtrl/U1_MipiTypeLUT/U2_MipiTxCtrl/CfgTxHPixelMax[12]~FF|CLK
+Path End      : U2_MipiTxCtrl/CalcHPixelNum[4]~FF|D
+Launch Clock  : MipiTxPixelClk (RISE)
+Capture Clock : MipiTxPixelClk (RISE)
+Slack         : 2.464  (required time - arrival time)
+Delay         : 7.017
+
+Logic Level : 6
+Non-global nets on path : 6
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 7.416
+--------------------------------------------
+End-of-path arrival time       : 11.526
+
+Constraint                     : 10
++ Capture Clock Path Delay     : 4.11
+- Clock Uncertainty            : 0.12
+--------------------------------------------
+End-of-path required time      : 13.99
+
+
+Launch Clock Path
+pin name                                                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================================================================
+ MipiTxPixelClk                                                          inpad               0                      0           2          (160,119)
+ MipiTxPixelClk                                                          inpad             0.2                    0.2           2          (160,119)
+ MipiTxPixelClk                                                          io                  0                    0.2           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                                         gbuf_block       0.32                   0.52           2          (159,119)
+ CLKBUF__0|I                                                             gbuf             3.59                   4.11           2          (159,119)
+ CLKBUF__0|O                                                             gbuf                0                   4.11        1090          (159,119)
+ CLKBUF__0|clkout                                                        gbuf_block          0                   4.11        1090          (159,119)
+ U2_MipiTxCtrl/U1_MipiTypeLUT/U2_MipiTxCtrl/CfgTxHPixelMax[12]~FF|CLK    ff                  0                   4.11        1090          (93,196)
+
+Data Path
+pin name                                                                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================================
+ U2_MipiTxCtrl/U1_MipiTypeLUT/U2_MipiTxCtrl/CfgTxHPixelMax[12]~FF|Q        ff               0.282                  0.282           4          (93,196)
+ U2_MipiTxCtrl/U1_MipiTypeLUT/U2_MipiTxCtrl/CfgTxHPixelMax[12]~FF|O_seq    eft              1.933                  2.215           4          (93,196)
+   Routing elements:  
+     Manhattan distance of X:4, Y:3
+ LUT__19855|I[1]                                                           eft              0.223                  2.438           4          (89,193)
+ LUT__19855|in[1]                                                          lut                  0                  2.438           4          (89,193)
+ LUT__19855|out                                                            lut                  0                  2.438           2          (89,193)
+ LUT__19855|O                                                              eft              0.337                  2.775           2          (89,193)
+   Routing elements:  
+     Manhattan distance of X:0, Y:1
+ LUT__19856|I[3]                                                           eft              0.116                  2.891           2          (89,192)
+ LUT__19856|in[3]                                                          lut                  0                  2.891           2          (89,192)
+ LUT__19856|out                                                            lut                  0                  2.891           3          (89,192)
+ LUT__19856|O                                                              eft              0.789                   3.68           3          (89,192)
+   Routing elements:  
+     Manhattan distance of X:0, Y:3
+ LUT__19860|I[3]                                                           eft              0.116                  3.796           3          (89,189)
+ LUT__19860|in[3]                                                          lut                  0                  3.796           3          (89,189)
+ LUT__19860|out                                                            lut                  0                  3.796           2          (89,189)
+ LUT__19860|O                                                              eft              0.794                  4.591           2          (89,189)
+   Routing elements:  
+     Manhattan distance of X:0, Y:5
+ LUT__19863|I[2]                                                           eft              0.161                  4.752           2          (89,194)
+ LUT__19863|in[2]                                                          lut                  0                  4.752           2          (89,194)
+ LUT__19863|out                                                            lut                  0                  4.752          16          (89,194)
+ LUT__19863|O                                                              eft              1.233                  5.985          16          (89,194)
+ LUT__27289|I[2]                                                           eft              0.161                  6.146          16          (89,220)
+ LUT__27289|in[2]                                                          lut                  0                  6.146          16          (89,220)
+ LUT__27289|out                                                            lut                  0                  6.146          13          (89,220)
+ LUT__27289|O                                                              eft               0.93                  7.075          13          (89,220)
+   Routing elements:   feedthru(1)
+     Manhattan distance of X:0, Y:12
+ U2_MipiTxCtrl/CalcHPixelNum[4]~FF|I[1]                                    eft              0.223                  7.299          13          (89,208)
+ LUT__20063|in[1]                                                          lut                  0                  7.299          13          (89,208)
+ LUT__20063|out                                                            lut                  0                  7.299           2          (89,208)
+ U2_MipiTxCtrl/CalcHPixelNum[4]~FF|D                                       ff               0.118                  7.416           2          (89,208)
+
+Capture Clock Path
+pin name                                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
+====================================================================================================================
+ MipiTxPixelClk                           inpad               0                      0           2          (160,119)
+ MipiTxPixelClk                           inpad             0.2                    0.2           2          (160,119)
+ MipiTxPixelClk                           io                  0                    0.2           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                          gbuf_block       0.32                   0.52           2          (159,119)
+ CLKBUF__0|I                              gbuf             3.59                   4.11           2          (159,119)
+ CLKBUF__0|O                              gbuf                0                   4.11        1090          (159,119)
+ CLKBUF__0|clkout                         gbuf_block          0                   4.11        1090          (159,119)
+ U2_MipiTxCtrl/CalcHPixelNum[4]~FF|CLK    ff                  0                   4.11        1090          (89,208)
+
+######################################################################
+Path Detail Report (MipiTxPixelClk vs MipiRxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : U2_MipiTxData/U1_PrbsDataGen/MipiTx_DATA[47]~FF|CLK
+Path End      : MipiTx_DATA[42]
+Launch Clock  : MipiTxPixelClk (RISE)
+Capture Clock : MipiRxPixelClk (RISE)
+Slack         : 4.713  (required time - arrival time)
+Delay         : 4.502
+
+Logic Level : 1
+Non-global nets on path : 2
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 4.11
++ Clock To Q + Data Path Delay : 4.784
+--------------------------------------------
+End-of-path arrival time       : 8.894
+
+Constraint                     : 10
++ Capture Clock Path Delay     : 0
+- Clock Uncertainty            : 0.12
+- Output Delay                 : -3.727
+--------------------------------------------
+End-of-path required time      : 13.607
+
+
+Launch Clock Path
+pin name                                               model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==================================================================================================================================
+ MipiTxPixelClk                                         inpad               0                      0           2          (160,119)
+ MipiTxPixelClk                                         inpad             0.2                    0.2           2          (160,119)
+ MipiTxPixelClk                                         io                  0                    0.2           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                        gbuf_block       0.32                   0.52           2          (159,119)
+ CLKBUF__0|I                                            gbuf             3.59                   4.11           2          (159,119)
+ CLKBUF__0|O                                            gbuf                0                   4.11        1090          (159,119)
+ CLKBUF__0|clkout                                       gbuf_block          0                   4.11        1090          (159,119)
+ U2_MipiTxData/U1_PrbsDataGen/MipiTx_DATA[47]~FF|CLK    ff                  0                   4.11        1090          (89,239)
+
+Data Path
+pin name                                                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
+====================================================================================================================================
+ U2_MipiTxData/U1_PrbsDataGen/MipiTx_DATA[47]~FF|Q        ff               0.282                  0.282          18          (89,239)
+ U2_MipiTxData/U1_PrbsDataGen/MipiTx_DATA[47]~FF|O_seq    eft              3.254                  3.536          18          (89,239)
+   Routing elements:  
+     Manhattan distance of X:43, Y:1
+ LUT__23063|I[0]                                          efl              0.251                  3.787          18          (46,240)
+ LUT__23063|in[0]                                         lut                  0                  3.787          18          (46,240)
+ LUT__23063|out                                           lut                  0                  3.787           2          (46,240)
+ LUT__23063|O                                             efl              0.797                  4.584           2          (46,240)
+   Routing elements:  
+     Manhattan distance of X:3, Y:3
+ MipiTx_DATA[42]                                          io                 0.2                  4.784           2          (43,243)
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+
+######################################################################
+Path Detail Report (MipiTxPixelClk vs MipiTxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : edb_top_inst/MipiTx/vio_core_inst/ConfDataType[0]~FF|CLK
+Path End      : U2_MipiTxCtrl/U1_MipiTypeLUT/U4_PixelTypeLut|RADDR[2]
+Launch Clock  : MipiTxPixelClk (RISE)
+Capture Clock : MipiTxPixelClk (RISE)
+Slack         : 0.117  (arrival time - required time)
+Delay         : 0.17
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.177
+--------------------------------------------
+End-of-path arrival time       : 2.232
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=======================================================================================================================================
+ MipiTxPixelClk                                              inpad               0                      0           2          (160,119)
+ MipiTxPixelClk                                              inpad             0.1                    0.1           2          (160,119)
+ MipiTxPixelClk                                              io                  0                    0.1           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                             gbuf_block       0.16                   0.26           2          (159,119)
+ CLKBUF__0|I                                                 gbuf            1.795                  2.055           2          (159,119)
+ CLKBUF__0|O                                                 gbuf                0                  2.055        1090          (159,119)
+ CLKBUF__0|clkout                                            gbuf_block          0                  2.055        1090          (159,119)
+ edb_top_inst/MipiTx/vio_core_inst/ConfDataType[0]~FF|CLK    ff                  0                  2.055        1090          (105,204)
+
+Data Path
+pin name                                                      model name     delay (ns)   cumulative delay (ns)    pins on net   location
+==========================================================================================================================================
+ edb_top_inst/MipiTx/vio_core_inst/ConfDataType[0]~FF|Q        ff                0.141                  0.141           3          (105,204)
+ edb_top_inst/MipiTx/vio_core_inst/ConfDataType[0]~FF|O_seq    eft                0.17                  0.311           3          (105,204)
+   Routing elements:  
+     Manhattan distance of X:2, Y:2
+ U2_MipiTxCtrl/U1_MipiTypeLUT/U4_PixelTypeLut|RADDR[2]         ram_4096x20      -0.134                  0.177           3          (107,202)
+
+Capture Clock Path
+pin name                                             model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================================================
+ MipiTxPixelClk                                       inpad                0                      0           2          (160,119)
+ MipiTxPixelClk                                       inpad              0.1                    0.1           2          (160,119)
+ MipiTxPixelClk                                       io                   0                    0.1           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in                                      gbuf_block        0.16                   0.26           2          (159,119)
+ CLKBUF__0|I                                          gbuf             1.795                  2.055           2          (159,119)
+ CLKBUF__0|O                                          gbuf                 0                  2.055        1090          (159,119)
+ CLKBUF__0|clkout                                     gbuf_block           0                  2.055        1090          (159,119)
+ U2_MipiTxCtrl/U1_MipiTypeLUT/U4_PixelTypeLut|RCLK    ram_4096x20          0                  2.055        1090          (107,202)
+
+######################################################################
+Path Detail Report (MipiTxPixelClk vs MipiRxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : MipiTx_TYPE[0]~FF|CLK
+Path End      : MMipiTx_TYPE[0]
+Launch Clock  : MipiTxPixelClk (RISE)
+Capture Clock : MipiRxPixelClk (RISE)
+Slack         : 0.914  (arrival time - required time)
+Delay         : 0.704
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.845
+--------------------------------------------
+End-of-path arrival time       : 2.9
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 0
++ Clock Uncertainty            : 0.06
+- Output Delay                 : -1.926
+--------------------------------------------
+End-of-path required time      : 1.986
+
+
+Launch Clock Path
+pin name                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
+====================================================================================================
+ MipiTxPixelClk           inpad               0                      0           2          (160,119)
+ MipiTxPixelClk           inpad             0.1                    0.1           2          (160,119)
+ MipiTxPixelClk           io                  0                    0.1           2          (160,119)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in          gbuf_block       0.16                   0.26           2          (159,119)
+ CLKBUF__0|I              gbuf            1.795                  2.055           2          (159,119)
+ CLKBUF__0|O              gbuf                0                  2.055        1090          (159,119)
+ CLKBUF__0|clkout         gbuf_block          0                  2.055        1090          (159,119)
+ MipiTx_TYPE[0]~FF|CLK    ff                  0                  2.055        1090          (105,230)
+
+Data Path
+pin name                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
+======================================================================================================
+ MipiTx_TYPE[0]~FF|Q        ff               0.141                  0.141           3          (105,230)
+ MipiTx_TYPE[0]~FF|O_seq    eft              0.604                  0.745           3          (105,230)
+   Routing elements:  
+     Manhattan distance of X:22, Y:13
+ MMipiTx_TYPE[0]            io                 0.1                  0.845           3          (127,243)
+
+######################################################################
+Path Detail Report (MipiRxPixelClk vs MipiRxPixelClk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : edb_top_inst/LA_MipiRx/cap_fifo_din_tu[6]~FF|CLK
+Path End      : edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_1(10)|WDATA[0]
+Launch Clock  : MipiRxPixelClk (RISE)
+Capture Clock : MipiRxPixelClk (RISE)
+Slack         : 0.119  (arrival time - required time)
+Delay         : 0.17
+
+Logic Level : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.06
+--------------------------------------------
+End-of-path required time      : 2.115
+
+
+Launch Clock Path
+pin name                                            model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===============================================================================================================================
+ MipiRxPixelClk                                      inpad               0                      0           2          (160,122)
+ MipiRxPixelClk                                      inpad             0.1                    0.1           2          (160,122)
+ MipiRxPixelClk                                      io                  0                    0.1           2          (160,122)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__1|IO_in                                     gbuf_block       0.16                   0.26           2          (159,122)
+ CLKBUF__1|I                                         gbuf            1.795                  2.055           2          (159,122)
+ CLKBUF__1|O                                         gbuf                0                  2.055         921          (159,122)
+ CLKBUF__1|clkout                                    gbuf_block          0                  2.055         921          (159,122)
+ edb_top_inst/LA_MipiRx/cap_fifo_din_tu[6]~FF|CLK    ff                  0                  2.055         921          (17,182)
+
+Data Path
+pin name                                                                                                                                                                     model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================================================================================================================================================================
+ edb_top_inst/LA_MipiRx/cap_fifo_din_tu[6]~FF|Q                                                                                                                               ff                0.141                  0.141           2          (17,182)
+ edb_top_inst/LA_MipiRx/cap_fifo_din_tu[6]~FF|O_seq                                                                                                                           eft                0.17                  0.311           2          (17,182)
+   Routing elements:  
+     Manhattan distance of X:4, Y:0
+ edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_1(10)|WDATA[0]    ram_4096x20      -0.132                  0.179           2          (21,182)
+
+Capture Clock Path
+pin name                                                                                                                                                                 model name     delay (ns)   cumulative delay (ns)    pins on net   location
+=====================================================================================================================================================================================================================================================
+ MipiRxPixelClk                                                                                                                                                           inpad                0                      0           2          (160,122)
+ MipiRxPixelClk                                                                                                                                                           inpad              0.1                    0.1           2          (160,122)
+ MipiRxPixelClk                                                                                                                                                           io                   0                    0.1           2          (160,122)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__1|IO_in                                                                                                                                                          gbuf_block        0.16                   0.26           2          (159,122)
+ CLKBUF__1|I                                                                                                                                                              gbuf             1.795                  2.055           2          (159,122)
+ CLKBUF__1|O                                                                                                                                                              gbuf                 0                  2.055         921          (159,122)
+ CLKBUF__1|clkout                                                                                                                                                         gbuf_block           0                  2.055         921          (159,122)
+ edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_1(10)|WCLK    ram_4096x20          0                  2.055         921          (21,182)
+
+---------- Path Details for Min Critical Paths (end) ---------------

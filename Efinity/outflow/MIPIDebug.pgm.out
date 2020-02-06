@@ -1,0 +1,16 @@
+
+Efinix FPGA Programmer.
+Version: 2019.3.272.1.6 
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+Compiled: Dec  9 2019.
+
+Using source file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.lbf"
+Generating HEX programming file for device "T20F169", family "Trion"
+Using periphery source file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.lpf"
+Finished generating "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.hex"
+Efinity Programmer took 1.24432 seconds.
+	Efinity Programmer took 1.25 seconds (approximately) in total CPU time.
+Efinity Programmer virtual memory usage: begin = 62.148 MB, end = 94.268 MB, delta = 32.12 MB
+Efinity Programmer resident set memory usage: begin = 5.124 MB, end = 40.64 MB, delta = 35.516 MB
+	Efinity Programmer peak resident set memory usage = 46.376 MB

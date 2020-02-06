@@ -1,0 +1,67 @@
+
+Efinity Interface Designer Timing Report
+Version: 2019.3.272
+Date: 2020-02-06 12:27
+
+Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
+
+Device: T20F169
+Project: MIPIDebug
+Timing Model: C4 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++----------------+-------------+-----------------------+
+|     Clock      | Period (ns) | Phase Shift (degrees) |
++----------------+-------------+-----------------------+
+|  MipiTxEscClk  |    50.00    |           0           |
+| MipiTxPixelClk |    10.00    |           0           |
+|  MipiRxCalClk  |    10.00    |           0           |
+| MipiRxPixelClk |    10.00    |           0           |
++----------------+-------------+-----------------------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+--------------+-----------+----------+----------+
+| Instance Name |   Pin Name   | Parameter | Max (ns) | Min (ns) |
++---------------+--------------+-----------+----------+----------+
+|   MipiRefClk  |  MipiRefClk  |  GPIO_IN  |  1.909   |  0.954   |
+|     LED[0]    |    LED[0]    |  GPIO_OUT |  3.566   |  1.783   |
+|     LED[1]    |    LED[1]    |  GPIO_OUT |  3.566   |  1.783   |
+|  PixelRxHSync | PixelRxHSync |  GPIO_OUT |  3.566   |  1.783   |
+|  PixelRxValid | PixelRxValid |  GPIO_OUT |  3.566   |  1.783   |
+|  PixelTxValid | PixelTxValid |  GPIO_OUT |  3.566   |  1.783   |
++---------------+--------------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. LVDS Rx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++---------------+--------------+-----------+----------+----------+
+| Instance Name |   Pin Name   | Parameter | Max (ns) | Min (ns) |
++---------------+--------------+-----------+----------+----------+
+|  PixelRxVSync | PixelRxVSync |  GPIO_OUT |  0.000   |  0.000   |
+|  PixelTxHSync | PixelTxHSync |  GPIO_OUT |  0.000   |  0.000   |
+|  PixelTxVSync | PixelTxVSync |  GPIO_OUT |  0.000   |  0.000   |
++---------------+--------------+-----------+----------+----------+
+
+---------- LVDS Rx Timing Report (end) ----------
+
+---------- 6. JTAG Timing Report (begin) ----------
+
++---------------+----------------+-----------+----------+----------+
+| Instance Name |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++---------------+----------------+-----------+----------+----------+
+|   jtag_inst1  | jtag_inst1_TDI |  JTAG_IN  |  2.415   |  1.208   |
+|   jtag_inst1  | jtag_inst1_TMS |  JTAG_IN  |  1.755   |  0.877   |
++---------------+----------------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------

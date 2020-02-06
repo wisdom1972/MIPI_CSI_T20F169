@@ -1,0 +1,1128 @@
+Synthesis report for project MIPIDebug
+Date : Feb 6 2020  12:26:46
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+Top-level Entity Name : MipiTest
+### ### File List (begin) ### ### ###
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v (verilog_2k)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (verilog_2k)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v (verilog_2k)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiPixelData.v (verilog_2k)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITest.v (verilog_2k)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v (verilog_2k)
+### ### File List (end) ### ### ###
+
+### ### Pre-optimizations and mapping (begin) ### ### ###
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v (2216)"
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i4
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i6
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i8
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i5
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_6/i5
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_22/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_6/i6
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_6/i5
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_22/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_6/i4
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_22/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_6/i6
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_6/i8
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_6/i2
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_22/i2
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_6/i4
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_22/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i6
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_6/i8
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_6/i8
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_22/i3
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_6/i6
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/dff_22/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_6/i7
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/dff_22/i7
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_6/i8
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/dff_22/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (600)" removed instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_6/i3
+@ "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v (653)" representative instance : U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/dff_22/i3
+
+Mapping success.
+### ### Mapping (end) ### ### ###
+
+### ### Post-optimizations and re-synthesis (begin) ### ### ###
+
+Post-optimizations and re-synthesis success.
+### ### Post-optimizations and re-synthesis (end) ### ### ###
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 121
+Enable signal <vcc>, number of controlling flip flops: 1149
+Enable signal <TxConfigEn>, number of controlling flip flops: 132
+Enable signal <TxVSyncPos>, number of controlling flip flops: 2
+Enable signal <TxVSyncNeg>, number of controlling flip flops: 2
+Enable signal <n7220>, number of controlling flip flops: 2
+Enable signal <n7313>, number of controlling flip flops: 1
+Enable signal <n7340>, number of controlling flip flops: 28
+Enable signal <U2_MipiTxCtrl/U1_VSyncLenCalc/ULenCalcEnd>, number of controlling flip flops: 25
+Enable signal <U2_MipiTxCtrl/VSPeriodAva>, number of controlling flip flops: 6
+Enable signal <U2_MipiTxCtrl/U1_VSyncLenCalc/ULenCalcAva>, number of controlling flip flops: 24
+Enable signal <n7469>, number of controlling flip flops: 24
+Enable signal <U2_MipiTxCtrl/U2_HSyncLenCalc/ULenCalcEnd>, number of controlling flip flops: 17
+Enable signal <U2_MipiTxCtrl/HSPeriodAva>, number of controlling flip flops: 6
+Enable signal <U2_MipiTxCtrl/U2_HSyncLenCalc/ULenCalcAva>, number of controlling flip flops: 16
+Enable signal <n7660>, number of controlling flip flops: 4
+Enable signal <n7664>, number of controlling flip flops: 16
+Enable signal <n7768>, number of controlling flip flops: 16
+Enable signal <U2_MipiTxCtrl/U4_DValidCalc/ULenCalcEnd>, number of controlling flip flops: 17
+Enable signal <U2_MipiTxCtrl/DValidLenAva>, number of controlling flip flops: 6
+Enable signal <U2_MipiTxCtrl/U4_DValidCalc/ULenCalcAva>, number of controlling flip flops: 16
+Enable signal <n7965>, number of controlling flip flops: 16
+Enable signal <U2_MipiTxCtrl/U1_MipiTxOperate/VSyncStart>, number of controlling flip flops: 1
+Enable signal <n7972>, number of controlling flip flops: 1
+Enable signal <n7974>, number of controlling flip flops: 34
+Enable signal <U2_MipiTxCtrl/U1_MipiTxOperate/HBlankSigEnd>, number of controlling flip flops: 1
+Enable signal <U2_MipiTxCtrl/U1_MipiTxOperate/DValidStart>, number of controlling flip flops: 1
+Enable signal <MMipiTx_VALID>, number of controlling flip flops: 8
+Enable signal <n8266>, number of controlling flip flops: 1
+Enable signal <U3_MipiRxMonitor/SecondEn>, number of controlling flip flops: 17
+Enable signal <U3_MipiRxMonitor/MipiRxHSyncPos>, number of controlling flip flops: 21
+Enable signal <U3_MipiRxMonitor/MipiRxVSyncPos>, number of controlling flip flops: 28
+Enable signal <n8280>, number of controlling flip flops: 16
+Enable signal <U3_MipiRxMonitor/HSyncEnd>, number of controlling flip flops: 16
+Enable signal <PixelRxVSync>, number of controlling flip flops: 20
+Enable signal <n8302>, number of controlling flip flops: 16
+Enable signal <PixelRxHSync>, number of controlling flip flops: 20
+Enable signal <n8312>, number of controlling flip flops: 16
+Enable signal <U3_MipiRxMonitor/MipiRxHSyncNeg>, number of controlling flip flops: 1
+Enable signal <n8314>, number of controlling flip flops: 1
+Enable signal <U3_MipiRxMonitor/MipiRxValidPos>, number of controlling flip flops: 1
+Enable signal <n8320>, number of controlling flip flops: 6
+Enable signal <n8511>, number of controlling flip flops: 1
+Enable signal <n8512>, number of controlling flip flops: 1
+Enable signal <n8513>, number of controlling flip flops: 1
+Enable signal <MipiRxLanesAct>, number of controlling flip flops: 16
+Enable signal <PixelRxValid>, number of controlling flip flops: 40
+Enable signal <MipiRxError[0]>, number of controlling flip flops: 1
+Enable signal <U4_MipiRxData/U1_PrbsCheck/RightChkEn>, number of controlling flip flops: 8
+Enable signal <MipiRxError[1]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[2]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[3]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[4]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[5]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[6]>, number of controlling flip flops: 1
+Enable signal <MipiRxError[7]>, number of controlling flip flops: 1
+Enable signal <n9036>, number of controlling flip flops: 3
+Enable signal <n9043>, number of controlling flip flops: 4
+Enable signal <n9045>, number of controlling flip flops: 6
+Enable signal <n9048>, number of controlling flip flops: 16
+Enable signal <n9050>, number of controlling flip flops: 16
+Enable signal <n9053>, number of controlling flip flops: 16
+Enable signal <n9055>, number of controlling flip flops: 16
+Enable signal <n9058>, number of controlling flip flops: 16
+Enable signal <n9068>, number of controlling flip flops: 32
+Enable signal <n9039>, number of controlling flip flops: 3
+Enable signal <edb_top_inst/MipiTx/vio_core_inst/commit_sync2>, number of controlling flip flops: 77
+Enable signal <n9193>, number of controlling flip flops: 16
+Enable signal <n9194>, number of controlling flip flops: 16
+Enable signal <n9195>, number of controlling flip flops: 13
+Enable signal <edb_top_inst/MipiTx/vio_core_inst/hold_probe_in>, number of controlling flip flops: 106
+Enable signal <n9511>, number of controlling flip flops: 3
+Enable signal <n9516>, number of controlling flip flops: 4
+Enable signal <n9518>, number of controlling flip flops: 6
+Enable signal <n9521>, number of controlling flip flops: 16
+Enable signal <n9523>, number of controlling flip flops: 16
+Enable signal <n9526>, number of controlling flip flops: 16
+Enable signal <n9529>, number of controlling flip flops: 10
+Enable signal <n9513>, number of controlling flip flops: 3
+Enable signal <edb_top_inst/MipiRx/vio_core_inst/commit_sync2>, number of controlling flip flops: 10
+Enable signal <n9603>, number of controlling flip flops: 32
+Enable signal <edb_top_inst/MipiRx/vio_core_inst/hold_probe_in>, number of controlling flip flops: 111
+Enable signal <n9976>, number of controlling flip flops: 3
+Enable signal <n9978>, number of controlling flip flops: 19
+Enable signal <n9982>, number of controlling flip flops: 64
+Enable signal <n9984>, number of controlling flip flops: 27
+Enable signal <n9989>, number of controlling flip flops: 4
+Enable signal <n9991>, number of controlling flip flops: 6
+Enable signal <n9994>, number of controlling flip flops: 16
+Enable signal <n9996>, number of controlling flip flops: 64
+Enable signal <n9999>, number of controlling flip flops: 3
+Enable signal <n10001>, number of controlling flip flops: 64
+Enable signal <n10002>, number of controlling flip flops: 64
+Enable signal <n10003>, number of controlling flip flops: 3
+Enable signal <n10004>, number of controlling flip flops: 64
+Enable signal <n10005>, number of controlling flip flops: 64
+Enable signal <n10006>, number of controlling flip flops: 3
+Enable signal <n10007>, number of controlling flip flops: 64
+Enable signal <n10008>, number of controlling flip flops: 64
+Enable signal <n10009>, number of controlling flip flops: 3
+Enable signal <n10010>, number of controlling flip flops: 64
+Enable signal <n10011>, number of controlling flip flops: 64
+Enable signal <n10012>, number of controlling flip flops: 3
+Enable signal <n10013>, number of controlling flip flops: 64
+Enable signal <n10014>, number of controlling flip flops: 64
+Enable signal <n10015>, number of controlling flip flops: 3
+Enable signal <n10016>, number of controlling flip flops: 64
+Enable signal <n10017>, number of controlling flip flops: 64
+Enable signal <n10018>, number of controlling flip flops: 3
+Enable signal <n10019>, number of controlling flip flops: 64
+Enable signal <n10020>, number of controlling flip flops: 64
+Enable signal <n10025>, number of controlling flip flops: 13
+Enable signal <n10206>, number of controlling flip flops: 32
+Enable signal <n10422>, number of controlling flip flops: 17
+Enable signal <n10428>, number of controlling flip flops: 15
+Enable signal <n10437>, number of controlling flip flops: 9
+Enable signal <n10449>, number of controlling flip flops: 2
+Enable signal <n10452>, number of controlling flip flops: 1
+Enable signal <n10479>, number of controlling flip flops: 13
+Enable signal <edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/we>, number of controlling flip flops: 13
+Enable signal <n12547>, number of controlling flip flops: 4
+Enable signal <n12550>, number of controlling flip flops: 82
+### ### EFX FF CE enables (end) ### ### ###
+
+### ### Memory Trimming Report (begin) ### ### ### 
+Memory instance 'U2_MipiTxCtrl/U1_MipiTypeLUT/U4_PixelTypeLut' Port WDATA disconnected because it is disabled.
+### ### Memory Trimming Report (end) ### ### ### 
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF Output: U2_MipiTxCtrl/U1_VSyncLenCalc/LenPerUnitReg[0](=1)
+FF Output: U2_MipiTxCtrl/HBlkMultRslt[15](=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[56].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[57].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[58].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[59].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[8](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[9](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[10](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[11](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[12](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[13](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[14](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[15](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[16](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[17](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[18](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[19](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[20](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[21](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[22](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[23](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[24](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[25](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[26](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[27](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[28](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[29](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[30](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[31](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[32](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[33](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[34](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[35](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[36](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[37](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[38](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[39](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[40](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[41](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[42](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[43](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[44](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[45](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[46](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[47](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[48](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[49](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[50](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[51](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[52](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[53](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[54](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[55](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[56](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[57](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[58](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[59](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[60](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[61](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[62](=1)
+FF Output: edb_top_inst/LA_MipiRx/data_from_biu[63](=1)
+FF Output: MipiTx_paramTxVertBlankLength_Cycle[19](=1)
+FF Output: MipiTx_paramTxHoriBlankLength_Cycle[15](=1)
+FF Output: U2_MipiTxCtrl/VBlankLen[19](=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/gen_probe_in_sync[75].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/gen_probe_in_sync[91].sync_probe_in_U/d_clka(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[56].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/probe_in_sync_2d[3][8](=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[57].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/probe_in_sync_2d[3][9](=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[58].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/probe_in_sync_2d[3][10](=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/gen_probe_in_sync[59].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiRx/vio_core_inst/probe_in_sync_2d[3][11](=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/gen_probe_in_sync[75].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/probe_in_sync_2d[4][11](=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/gen_probe_in_sync[91].sync_probe_in_U/d_clkb(=1)
+FF Output: edb_top_inst/MipiTx/vio_core_inst/probe_in_sync_2d[5][11](=1)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[0]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDTypeChgCnt[0]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[1]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[2]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[3]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[4]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDataTypeReg[5]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDTypeChgCnt[1]~FF(unreachable)
+FF instance: U2_MipiTxCtrl/U1_MipiTypeLUT/MipiDTypeChgCnt[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U0_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U1_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U2_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U3_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U4_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U5_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U6_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[0]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[1]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[2]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[3]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[4]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[5]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[6]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[7]~FF(unreachable)
+FF instance: U2_MipiTxData/U1_PrbsDataGen/U7_PRBSGen/PRBSSft[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/DataShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U0_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/DataShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U1_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/DataShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/DataShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/DataShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U2_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/DataShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/DataShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/DataShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U3_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/DataShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/DataShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U4_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/DataShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/DataShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/DataShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U5_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U6_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/DataShift[0]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/PRBSShift[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/Error~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[1]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[2]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[3]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[6]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[8]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[9]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[10]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[11]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[12]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[13]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[14]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[15]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[16]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[17]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[18]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[19]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[20]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[21]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[22]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/RightCnt[23]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/DataShift[4]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/DataShift[5]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/DataShift[7]~FF(unreachable)
+FF instance: U4_MipiRxData/U1_PrbsCheck/U7_PRBS9Chk/DataShift[8]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[0]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[7]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[6]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[5]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[4]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[31]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[30]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[29]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[28]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[27]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[26]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[25]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[24]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[23]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[22]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[21]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[20]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[19]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[18]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[17]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[16]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[15]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[14]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[13]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[12]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[11]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[10]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[9]~FF(unreachable)
+FF instance: edb_top_inst/MipiTx/vio_core_inst/address_counter[8]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[0]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[31]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[30]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[29]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[28]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[27]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[26]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[25]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[24]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[23]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[22]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[21]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[20]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[19]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[18]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[17]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[16]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[15]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[14]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[13]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[12]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[11]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[10]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[9]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[8]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[7]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[6]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[5]~FF(unreachable)
+FF instance: edb_top_inst/MipiRx/vio_core_inst/address_counter[4]~FF(unreachable)
+FF instance: edb_top_inst/LA_MipiRx/address_counter[27]~FF(unreachable)
+FF instance: edb_top_inst/LA_MipiRx/address_counter[28]~FF(unreachable)
+FF instance: edb_top_inst/LA_MipiRx/address_counter[29]~FF(unreachable)
+FF instance: edb_top_inst/LA_MipiRx/address_counter[30]~FF(unreachable)
+FF instance: edb_top_inst/LA_MipiRx/address_counter[31]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs     MULTs
+------------------------------------------------------------         ---        ----        ----      ----     -----
+MipiTest:MipiTest                                               3730(71)    1021(32)    3009(69)     27(0)      4(0)
++MipiTxCtrl(TxPixelClkFreq_C=28'b011111011110001010010000...    716(279)    582(155)    597(210)      1(0)      4(4)
+ +U1_VSyncLenCalc:LengthCalc(NumWidth_C=8)                        94(94)      57(57)      49(49)      0(0)      0(0)
+ +LengthCalc(NumWidth_C=16,LenWidth_C=24,ValueWidth_C=16)...    106(106)      70(70)      62(62)      0(0)      0(0)
+ +U1_MipiTypeLUT:MipiTypeLUT                                      22(22)        0(0)      34(34)      1(1)      0(0)
+  +EFX_RAM_5K(READ_WIDTH=20,WRITE_WIDTH=20,INIT_7=256'b01...        0(0)        0(0)        0(0)      0(0)      0(0)
+  +LengthCalc(NumWidth_C=4,LenWidth_C=16,ValueWidth_C=16)...      78(78)      54(54)      33(33)      0(0)      0(0)
+            +MipiTxOperate(TxShortFramerLen_C=8'b0101011)...    137(137)    246(246)    209(209)      0(0)      0(0)
++U2_MipiTxData:MipiTxData8B                                         8(0)        7(0)      64(56)      0(0)      0(0)
+ +U1_PrbsDataGen:PRBS9GenX8                                         8(8)        7(7)        8(8)      0(0)      0(0)
+  +U0_PRBSGen:PRBS9Gen                                              0(0)        0(0)        0(0)      0(0)      0(0)
+  +U1_PRBSGen:PRBS9Gen(Alignment=9'b100001000)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U2_PRBSGen:PRBS9Gen(Alignment=9'b100101100)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U3_PRBSGen:PRBS9Gen(Alignment=9'b110011000)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U4_PRBSGen:PRBS9Gen(Alignment=9'b110001001)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U5_PRBSGen:PRBS9Gen(Alignment=9'b100010110)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U6_PRBSGen:PRBS9Gen(Alignment=9'b100111011)                      0(0)        0(0)        0(0)      0(0)      0(0)
+  +U7_PRBSGen:PRBS9Gen(Alignment=9'b110110000)                      0(0)        0(0)        0(0)      0(0)      0(0)
++U3_MipiRxMonitor:MipiRxMoni                                    257(257)    154(154)    148(148)      0(0)      0(0)
++U3_MipiRxControl:MipiRxCtrl                                      57(57)      49(49)      39(39)      0(0)      0(0)
++U4_MipiRxData:MipiRxData8B(RightCntWidth_C=24)                    57(0)       30(0)      53(32)      0(0)      0(0)
+ +U1_PrbsCheck:PRBS9ChkX8(RightCntWidth_C=24)                     57(57)      30(30)      21(21)      0(0)      0(0)
+  +U0_PRBS9Chk:PRBS9Chk(RightCntWidth_C=24)                         0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100001000)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100101100)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110011000)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110001001)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100010110)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100111011)...        0(0)        0(0)        0(0)      0(0)      0(0)
+     +PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110110000)...        0(0)        0(0)        0(0)      0(0)      0(0)
++edb_top_inst:edb_top                                            2564(0)      167(0)     2039(0)     26(0)      0(0)
+ +edb_vio_top(NUM_PROBE_IN=6,NUM_PROBE_OUT=12,PROBE_IN0_W...      574(0)       25(0)      296(0)      0(0)      0(0)
+  +vio_core(INT_WIDTH=108,OUT_WIDTH=77,PROBE_OUT_INIT_VAL...    574(224)      25(25)    296(188)      0(0)      0(0)
+   +axi_crc_i:adbg_crc32                                          32(32)        0(0)      55(55)      0(0)      0(0)
+   +gen_probe_in_sync[0].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[1].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[2].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[3].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[4].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[5].sync_probe_in_U:syncer                     3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[6].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[7].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[8].sync_probe_in_U:syncer                     3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[9].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[10].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[11].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[12].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[13].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[14].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[15].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[16].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[17].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[18].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[19].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[20].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[21].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[22].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[23].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[24].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[25].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[26].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[27].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[28].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[29].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[30].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[31].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[32].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[33].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[34].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[35].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[36].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[37].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[38].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[39].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[40].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[41].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[42].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[43].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[44].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[45].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[46].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[47].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[48].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[49].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[50].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[51].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[52].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[53].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[54].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[55].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[56].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[57].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[58].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[59].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[60].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[61].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[62].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[63].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[64].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[65].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[66].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[67].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[68].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[69].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[70].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[71].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[72].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[73].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[74].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[75].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[76].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[77].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[78].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[79].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[80].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[81].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[82].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[83].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[84].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[85].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[86].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[87].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[88].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[89].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[90].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[91].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[92].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[93].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[94].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[95].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[96].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[97].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[98].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[99].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[100].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[101].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[102].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[103].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[104].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[105].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[106].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[107].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+ +edb_vio_top(NUM_PROBE_IN=12,NUM_PROBE_OUT=5,PROBE_IN0_W...      455(0)       25(0)      257(0)      0(0)      0(0)
+  +vio_core(INT_WIDTH=115,OUT_WIDTH=10,PROBE_OUT_INIT_VAL...     455(90)      25(25)    257(152)      0(0)      0(0)
+   +axi_crc_i:adbg_crc32                                          32(32)        0(0)      54(54)      0(0)      0(0)
+   +gen_probe_in_sync[0].sync_probe_in_U:syncer                     3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[1].sync_probe_in_U:syncer                     3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[2].sync_probe_in_U:syncer                     3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[3].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[4].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[5].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[6].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[7].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[8].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[9].sync_probe_in_U:syncer                     3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[10].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[11].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[12].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[13].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[14].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[15].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[16].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[17].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[18].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[19].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[20].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[21].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[22].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[23].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[24].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[25].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[26].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[27].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[28].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[29].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[30].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[31].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[32].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[33].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[34].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[35].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[36].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[37].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[38].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[39].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[40].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[41].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[42].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[43].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[44].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[45].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[46].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[47].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[48].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[49].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[50].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[51].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[52].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[53].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[54].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[55].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[56].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[57].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[58].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[59].sync_probe_in_U:syncer                    0(0)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[60].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[61].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[62].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[63].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[64].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[65].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[66].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[67].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[68].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[69].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[70].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[71].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[72].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[73].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[74].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[75].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[76].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[77].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[78].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[79].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[80].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[81].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[82].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[83].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[84].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[85].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[86].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[87].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[88].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[89].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[90].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[91].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[92].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[93].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[94].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[95].sync_probe_in_U:syncer                    3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[96].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[97].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[98].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[99].sync_probe_in_U:syncer                    3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[100].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[101].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[102].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[103].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[104].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[105].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[106].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[107].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[108].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[109].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[110].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[111].sync_probe_in_U:syncer                   3(3)        0(0)        0(0)      0(0)      0(0)
+   +gen_probe_in_sync[112].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[113].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+   +gen_probe_in_sync[114].sync_probe_in_U:syncer                   3(3)        0(0)        1(1)      0(0)      0(0)
+ +edb_la_top(NUM_PROBES=7,DATA_DEPTH=4096,INPUT_PIPE_STAG...  1449(1242)     112(60)  1452(1188)     26(0)      0(0)
+  +axi_crc_i:adbg_crc32                                           32(32)        0(0)      56(56)      0(0)      0(0)
+                     +compare_unit(WIDTH=11'b0100,PIPE=1)...      13(13)        0(0)      17(17)      0(0)      0(0)
+                     +compare_unit(WIDTH=11'b0100,PIPE=1)...      13(13)        0(0)      17(17)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        7(7)        0(0)        8(8)      0(0)      0(0)
+                    +compare_unit(WIDTH=11'b01000,PIPE=1)...      21(21)        0(0)      26(26)      0(0)      0(0)
+                       +compare_unit(WIDTH=11'b01,PIPE=1)...        8(8)        0(0)        9(9)      0(0)      0(0)
+                      +compare_unit(WIDTH=11'b010,PIPE=1)...        9(9)        0(0)      10(10)      0(0)      0(0)
+                     +compare_unit(WIDTH=11'b0110,PIPE=1)...      17(17)        0(0)      21(21)      0(0)      0(0)
+  +trigger_unit_inst:trigger_unit(WIDTH=7,PIPE=1)                   1(1)        0(0)        2(2)      0(0)      0(0)
+  +la_biu_inst:la_biu(CAPTURE_WIDTH=26,DATA_DEPTH=4096)           86(60)      52(16)      98(74)     26(0)      0(0)
+             +fifo_with_read(DATA_WIDTH=26,ADDR_WIDTH=12)...      26(26)      36(36)      24(24)     26(0)      0(0)
+    +simple_dual_port_ram(DATA_WIDTH=26,ADDR_WIDTH=12,RAM...        0(0)        0(0)        0(0)    26(26)      0(0)
+ +debug_hub_inst:debug_hub                                        86(86)        5(5)      34(34)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+          Clock     Flip-Flops   Memory Ports    Multipliers
+          -----     ----------   ------------    -----------
+ MipiTxPixelClk           1084              1              4
+ MipiRxPixelClk            868             52              0
+ jtag_inst1_TCK           1778              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20F169
+project : MIPIDebug
+root : MipiTest
+I : /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity
+output-dir : /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow
+work-dir : /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_syn
+write-efx-verilog : /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.map.v
+binary-db : /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/MIPIDebug.vdb
+insert-ios : 0
+num_mult18 : -1
+num_ram_5k : -1
+syn_options : mode=speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	125
+OUTPUT PORTS    : 	230
+
+EFX_ADD         : 	1021
+EFX_LUT4        : 	3009
+   1-2  Inputs  : 	496
+   3    Inputs  : 	744
+   4    Inputs  : 	1769
+EFX_MULT        : 	4
+EFX_FF          : 	3730
+EFX_RAM_5K      : 	27
+EFX_GBUFCE      : 	3
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 41s
+Elapsed synthesis time : 49s

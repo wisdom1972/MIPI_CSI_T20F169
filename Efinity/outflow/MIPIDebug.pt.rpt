@@ -1,0 +1,450 @@
+
+Efinity Interface Designer Report
+Version: 2019.3.272
+Date: 2020-02-06 12:27
+
+Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
+
+Device: T20F169
+Project: MIPIDebug
+
+Package: 169-ball FBGA (final)
+Timing Model: C4 (final)
+
+---------- Table of Contents (begin) ----------
+   1. Periphery Usage Summary
+   2. Generated Output Files
+   3. I/O Banks Summary
+   4. Global Connection Summary
+   5. Clock Region Usage Summary
+   6. GPIO Usage Summary
+   7. PLL Usage Summary
+   8. LVDS Rx Usage Summary
+   9. LVDS Tx Usage Summary
+   10. MIPI Rx Usage Summary
+   11. MIPI Tx Usage Summary
+   12. Clock Mux Usage Summary
+   13. Configuration Control Usage Summary
+   14. JTAG Usage Summary
+---------- Table of Contents (end) ------------
+
+---------- 1. Periphery Usage Summary (begin) ----------
+clkmux: 2 / 2 (100.0%)
+control: 0 / 1 (0.0%)
+gpio: 8 / 31 (25.81%)
+jtag: 1 / 2 (50.0%)
+lvds_bg: 0 / 1 (0.0%)
+lvds_rx: 1.5 / 13 (11.54%)
+	gpio: 3
+lvds_tx: 0 / 8 (0.0%)
+mipi_rx: 1 / 2 (50.0%)
+mipi_tx: 2 / 2 (100.0%)
+pll: 2 / 5 (40.0%)
+---------- Periphery Usage Summary (end) ----------
+
+---------- 2. Generated Output Files (begin) ----------
+Interface Configuration: MIPIDebug.interface.csv
+Peripheral Block Configuration: MIPIDebug.lpf
+Pinout Report: MIPIDebug.pinout.csv
+Timing Report: MIPIDebug.pt_timing.rpt
+Timing SDC Template: MIPIDebug.pt.sdc
+Verilog Template: MIPIDebug_template.v
+---------- Generated Output Files (end) ----------
+
+---------- 3. I/O Banks Summary (begin) ----------
+
++-----------+----------------------+
+|  I/O Bank |     I/O Standard     |
++-----------+----------------------+
+|     1A    | 3.3 V LVTTL / LVCMOS |
+|  1B_1C_1D | 3.3 V LVTTL / LVCMOS |
+|     1E    | 3.3 V LVTTL / LVCMOS |
+|     2A    |        1.2 V         |
+|     2B    |        1.2 V         |
+|   3A_3B   | 3.3 V LVTTL / LVCMOS |
+|  3C_3D_3E | 3.3 V LVTTL / LVCMOS |
+|     4A    | 3.3 V LVTTL / LVCMOS |
+|     4B    | 3.3 V LVTTL / LVCMOS |
+| BR_CORNER |        1.2 V         |
+| TL_CORNER |        1.2 V         |
+| TR_CORNER |        1.2 V         |
++-----------+----------------------+
+
+---------- I/O Banks Summary (end) ----------
+
+---------- 4. Global Connection Summary (begin) ----------
+
++----------------+-----------------+------+
+|    Pin Name    |     Resource    | Type |
++----------------+-----------------+------+
+|  MipiRxCalClk  | PLL_TR1.CLKOUT0 | GCLK |
+| MipiRxPixelClk | PLL_TR1.CLKOUT1 | GCLK |
+|  MipiTxEscClk  | PLL_TR0.CLKOUT0 | GCLK |
+| MipiTxPixelClk | PLL_TR0.CLKOUT1 | GCLK |
++----------------+-----------------+------+
+
+---------- Global Connection Summary (end) ----------
+
+---------- 5. Clock Region Usage Summary (begin) ----------
+
++--------------+----------------+
+| Clock Region | Used/Available |
++--------------+----------------+
+|      B       |      0/16      |
+|      L0      |      0/4       |
+|      L1      |      0/4       |
+|      L2      |      0/4       |
+|      R0      |      0/4       |
+|      R1      |      0/4       |
+|      R2      |      0/4       |
+|      T       |      3/16      |
++--------------+----------------+
+
+---------- Clock Region Usage Summary (end) ----------
+
+---------- 6. GPIO Usage Summary (begin) ----------
+
+Global Unused Setting: input with weak pulldown
+
++---------------+-------------+--------+----------+--------------+----------+---------------------+-------------+
+| Instance Name |   Resource  |  Mode  | Register | Clock Region | I/O Bank |       Pad Name      | Package Pin |
++---------------+-------------+--------+----------+--------------+----------+---------------------+-------------+
+|     Clk50M    |   GPIOR_76  | input  |          |              |  3A_3B   |   GPIOR_76_PLLIN0   |     D13     |
+|    Clk74M25   |   GPIOL_75  | input  |          |              |    1E    |   GPIOL_75_PLLIN1   |      B1     |
+|     LED[0]    |   GPIOL_20  | output |          |              | 1B_1C_1D | GPIOL_20_CTRL0_CDI4 |      E1     |
+|     LED[1]    |   GPIOL_21  | output |          |              | 1B_1C_1D | GPIOL_21_CTRL1_CDI5 |      F2     |
+|   MipiRefClk  |   GPIOR_81  | input  |          |              |  3A_3B   |   GPIOR_81_MREFCLK  |     F11     |
+|  PixelRxHSync |  GPIOR_158  | output |          |              | 3C_3D_3E |   GPIOR_158_TEST_N  |     H12     |
+|  PixelRxValid |  GPIOR_151  | output |          |              | 3C_3D_3E |   GPIOR_151_CBUS0   |     J11     |
+|  PixelRxVSync | GPIOB_RXN09 | output |          |              |    4A    |     GPIOB_RXN09     |     M12     |
+|  PixelTxHSync | GPIOB_RXP12 | output |          |              |    4A    |  GPIOB_RXP12_EXTFB0 |     J13     |
+|  PixelTxValid |  GPIOR_120  | output |          |              | 3C_3D_3E |   GPIOR_120_CLK15   |     G12     |
+|  PixelTxVSync | GPIOB_RXN10 | output |          |              |    4A    |     GPIOB_RXN10     |     N12     |
++---------------+-------------+--------+----------+--------------+----------+---------------------+-------------+
+
+
+Input GPIO Configuration:
+=========================
+
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+| Instance Name | Input Pin | Alternate Input Pin | Input Clock Pin |  Pull Up/Down | Schmitt Trigger | DDIO |
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+|     Clk50M    |           |        Clk50M       |                 | weak pulldown |      Enable     |      |
+|    Clk74M25   |           |       Clk74M25      |                 | weak pulldown |      Enable     |      |
+|   MipiRefClk  |           |      MipiRefClk     |                 | weak pulldown |      Enable     |      |
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+
+Output GPIO Configuration:
+==========================
+
++---------------+--------------+------------------+----------------+-----------+------+
+| Instance Name |  Output Pin  | Output Clock Pin | Drive Strength | Slew Rate | DDIO |
++---------------+--------------+------------------+----------------+-----------+------+
+|     LED[0]    |    LED[0]    |                  |       3        |   Enable  | none |
+|     LED[1]    |    LED[1]    |                  |       3        |   Enable  | none |
+|  PixelRxHSync | PixelRxHSync |                  |       3        |  Disable  | none |
+|  PixelRxValid | PixelRxValid |                  |       3        |  Disable  | none |
+|  PixelRxVSync | PixelRxVSync |                  |                |           |      |
+|  PixelTxHSync | PixelTxHSync |                  |                |           |      |
+|  PixelTxValid | PixelTxValid |                  |       3        |   Enable  | none |
+|  PixelTxVSync | PixelTxVSync |                  |                |           |      |
++---------------+--------------+------------------+----------------+-----------+------+
+
+---------- GPIO Usage Summary (end) ----------
+
+---------- 7. PLL Usage Summary (begin) ----------
+
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------+----------------+---------+
+| Instance Name | Resource | Clock Region | Ref Clock Mode | Reference Clock | Feedback Mode | Feedback Clock |   Clkout0    |    Clkout1     | Clkout2 |
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------+----------------+---------+
+|   MipiRxPll   | PLL_TR1  |              |    external    |      Clk50M     |    internal   |                | MipiRxCalClk | MipiRxPixelClk |         |
+|   MipiTxPll   | PLL_TR0  |              |    external    |      Clk50M     |    internal   |                | MipiTxEscClk | MipiTxPixelClk |         |
++---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------+----------------+---------+
+
+***** PLL 0 *****
+
+Instance Name                 : MipiRxPll
+Resource                      : PLL_TR1
+Locked Pin Name               : PllLocked[2]
+Reference Clock Mode          : external
+Reference Clock Resource      : GPIOR_76
+Reference Clock               : Clk50M
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 50.00 MHz
+Reference Clock Period        : 20.00 ns
+Multiplier (M)                : 30
+Pre-Divider (N)               : 1
+VCO Frequency                 : 1500.00 MHz
+Post-Divider (O)              : 1
+PLL Frequency                 : 1500.00 MHz
+
+Output Clock 0
+Clock Pin Name                : MipiRxCalClk
+Output Divider                : 15
+Output Phase Shift            : 0
+Output Frequency              : 100.00 MHz
+Output Period                 : 10.00 ns
+
+Output Clock 1
+Clock Pin Name                : MipiRxPixelClk
+Output Divider                : 15
+Output Phase Shift            : 0
+Output Frequency              : 100.00 MHz
+Output Period                 : 10.00 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 50.00 MHz * (30/1)
+	    = 1500.00 MHz
+	PLL = VCO / O
+	    = 1500.00 MHz / 1
+	    = 1500.00 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 1500.00 MHz / 15
+	        = 100.00 MHz
+	CLKOUT1 = PLL / CLKOUT1_DIV
+	        = 1500.00 MHz / 15
+	        = 100.00 MHz
+
+SDC Constraints:
+	create_clock -period 10.00 MipiRxCalClk
+	create_clock -period 10.00 MipiRxPixelClk
+
+***** PLL 1 *****
+
+Instance Name                 : MipiTxPll
+Resource                      : PLL_TR0
+Locked Pin Name               : PllLocked[1]
+Reference Clock Mode          : external
+Reference Clock Resource      : GPIOR_76
+Reference Clock               : Clk50M
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 50.00 MHz
+Reference Clock Period        : 20.00 ns
+Multiplier (M)                : 30
+Pre-Divider (N)               : 1
+VCO Frequency                 : 1500.00 MHz
+Post-Divider (O)              : 1
+PLL Frequency                 : 1500.00 MHz
+
+Output Clock 0
+Clock Pin Name                : MipiTxEscClk
+Output Divider                : 75
+Output Phase Shift            : 0
+Output Frequency              : 20.00 MHz
+Output Period                 : 50.00 ns
+
+Output Clock 1
+Clock Pin Name                : MipiTxPixelClk
+Output Divider                : 15
+Output Phase Shift            : 0
+Output Frequency              : 100.00 MHz
+Output Period                 : 10.00 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 50.00 MHz * (30/1)
+	    = 1500.00 MHz
+	PLL = VCO / O
+	    = 1500.00 MHz / 1
+	    = 1500.00 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 1500.00 MHz / 75
+	        = 20.00 MHz
+	CLKOUT1 = PLL / CLKOUT1_DIV
+	        = 1500.00 MHz / 15
+	        = 100.00 MHz
+
+SDC Constraints:
+	create_clock -period 50.00 MipiTxEscClk
+	create_clock -period 10.00 MipiTxPixelClk
+
+---------- PLL Usage Summary (end) ----------
+
+---------- 8. LVDS Rx Usage Summary (begin) ----------
+
+No LVDS Rx was configured
+
+---------- LVDS Rx Usage Summary (end) ----------
+
+---------- 9. LVDS Tx Usage Summary (begin) ----------
+
+No LVDS Tx was configured
+
+---------- LVDS Tx Usage Summary (end) ----------
+
+---------- 10. MIPI Rx Usage Summary (begin) ----------
+
++---------------+----------+--------------+----------------+----------------------+
+| Instance Name | Resource | Clock Region |   Pixel Clk    | DPHY Calibration Clk |
++---------------+----------+--------------+----------------+----------------------+
+|     MipiRx    | MIPI_RX0 |      T       | MipiRxPixelClk |     MipiRxCalClk     |
++---------------+----------+--------------+----------------+----------------------+
+
+Instance Name       : MipiRx
+Resource            : MIPI_RX0
+
+Lane Mapping
+
+RXD0 - Lane         : clk
+RXD0 - P&N Pin Swap : false
+RXD1 - Lane         : data0
+RXD1 - P&N Pin Swap : false
+RXD2 - Lane         : data1
+RXD2 - P&N Pin Swap : false
+RXD3 - Lane         : data2
+RXD3 - P&N Pin Swap : false
+RXD4 - Lane         : data3
+RXD4 - P&N Pin Swap : false
+
+Timing
+
+DPHY Calibration Clock Frequency (MHz)  : 100.00
+
+Clock Timer
+T_clk_settle (ns)                       : 200
+
+Data Timer
+T_hs_settle (ns)                        : 130
+
+---------- MIPI Rx Usage Summary (end) ----------
+
+---------- 11. MIPI Tx Usage Summary (begin) ----------
+
++---------------+----------+--------------+-----------------------+----------------------+----------------+--------------+-------------------+--------------+
+| Instance Name | Resource | Clock Region |     Reference Clk     | Ref Clock Freq (MHz) |   Pixel Clk    |   Esc Clk    | PHY Tx Freq (MHz) | PHY Clk Mode |
++---------------+----------+--------------+-----------------------+----------------------+----------------+--------------+-------------------+--------------+
+|     MipiTx    | MIPI_TX0 |      T       | MipiRefClk.MipiRefClk |        26.00         | MipiRxPixelClk | MipiTxEscClk |      1500.00      |  Continuous  |
+|    MMipiTx    | MIPI_TX1 |      T       | MipiRefClk.MipiRefClk |        26.00         | MipiRxPixelClk | MipiTxEscClk |      1500.00      |  Continuous  |
++---------------+----------+--------------+-----------------------+----------------------+----------------+--------------+-------------------+--------------+
+
+***** MIPI TX 0 *****
+
+Instance Name       : MipiTx
+Resource            : MIPI_TX0
+
+Lane Mapping
+
+TXD0 - Lane         : clk
+TXD1 - Lane         : data0
+TXD2 - Lane         : data1
+TXD3 - Lane         : data2
+TXD4 - Lane         : data3
+
+Timing
+
+Clock Timer
+T_clk_post (ns)               : 113
+T_clk_trail (ns)              : 96
+T_clk_prepare (ns)            : 48
+T_clk_zero (ns)               : 304
+Escape Clock Frequency (MHz)  : 20.00
+T_clk_pre (ns)                : 250
+
+Data Timer
+T_hs_prepare (ns)             : 90
+T_hs_zero (ns)                : 142
+T_hs_trail (ns)               : 106
+
+***** MIPI TX 1 *****
+
+Instance Name       : MMipiTx
+Resource            : MIPI_TX1
+
+Lane Mapping
+
+TXD0 - Lane         : clk
+TXD1 - Lane         : data0
+TXD2 - Lane         : data1
+TXD3 - Lane         : data2
+TXD4 - Lane         : data3
+
+Timing
+
+Clock Timer
+T_clk_post (ns)               : 113
+T_clk_trail (ns)              : 96
+T_clk_prepare (ns)            : 48
+T_clk_zero (ns)               : 304
+Escape Clock Frequency (MHz)  : 20.00
+T_clk_pre (ns)                : 250
+
+Data Timer
+T_hs_prepare (ns)             : 90
+T_hs_zero (ns)                : 142
+T_hs_trail (ns)               : 106
+
+---------- MIPI Tx Usage Summary (end) ----------
+
+---------- 12. Clock Mux Usage Summary (begin) ----------
+
++----------+-----------------+
+| Resource | Output Assigned |
++----------+-----------------+
+| CLKMUX_R |        4        |
++----------+-----------------+
+
+Resource: CLKMUX_R
+
+Clock mux assignment:
+
++-----------------+----------------+----------+--------------+----------------+---------+--------------+----------------+---------+---------+---------+
+|  Input Resource |   Clock Pin    |  Status  |   RCLK[0]    |    RCLK[1]     | RCLK[2] |   RCLK[3]    |    RCLK[4]     | RCLK[5] | RCLK[6] | RCLK[7] |
++-----------------+----------------+----------+--------------+----------------+---------+--------------+----------------+---------+---------+---------+
+|                 |                | Selected | MipiTxEscClk | MipiTxPixelClk |         | MipiRxCalClk | MipiRxPixelClk |         |         |         |
+|   GPIOR_127.IN  |                |          |      -       |                |         |              |       -        |         |         |         |
+|   GPIOR_126.IN  |                |          |              |       -        |         |              |                |    O    |         |         |
+|   GPIOR_125.IN  |                |          |              |                |    O    |              |                |         |    O    |         |
+|   GPIOR_124.IN  |                |          |              |                |         |      -       |                |         |         |    O    |
+|   GPIOR_123.IN  |                |          |      -       |                |         |              |       -        |         |         |         |
+|   GPIOR_122.IN  |                |          |              |       -        |         |              |                |    O    |         |         |
+|   GPIOR_121.IN  |                |          |              |                |    O    |              |                |         |    O    |         |
+|   GPIOR_120.IN  |                |          |              |                |         |      -       |                |         |         |    O    |
+| PLL_TR0.CLKOUT0 |  MipiTxEscClk  |  Routed  |      ^       |                |         |              |                |         |    O    |         |
+| PLL_TR0.CLKOUT1 | MipiTxPixelClk |  Routed  |              |       ^        |    O    |              |                |         |         |         |
+| PLL_TR0.CLKOUT2 |                |          |              |       -        |    O    |              |                |         |         |         |
+| PLL_TR1.CLKOUT0 |  MipiRxCalClk  |  Routed  |              |                |         |      ^       |                |         |         |    O    |
+| PLL_TR1.CLKOUT1 | MipiRxPixelClk |  Routed  |              |                |         |              |       ^        |    O    |         |         |
+| PLL_TR1.CLKOUT2 |                |          |              |                |         |              |       -        |    O    |         |         |
+| PLL_BR0.CLKOUT0 |                |          |      -       |                |         |              |                |         |         |    O    |
+| PLL_BR0.CLKOUT1 |                |          |              |       -        |    O    |              |                |         |         |         |
+| PLL_BR0.CLKOUT2 |                |          |              |       -        |    O    |              |                |         |         |         |
++-----------------+----------------+----------+--------------+----------------+---------+--------------+----------------+---------+---------+---------+
+
+*NOTE
+ : No connection from input to mux output
+O: Available input to mux output connection
+^: Input assigned to mux output
+-: Unavailable (used) input to mux output connection
+
+---------- Clock Mux Usage Summary (end) ----------
+
+---------- 13. Configuration Control Usage Summary (begin) ----------
+
+No Configuration Control was configured
+
+---------- Configuration Control Usage Summary (end) ----------
+
+---------- 14. JTAG Usage Summary (begin) ----------
+
+Instance Name                                     : jtag_inst1
+
+Resource                                          : JTAG_USER1
+
+Capture Pin Name                                  : jtag_inst1_CAPTURE
+Gated Test Clock Pin Name                         : jtag_inst1_DRCK
+Reset Pin Name                                    : jtag_inst1_RESET
+Run Test Pin Name                                 : jtag_inst1_RUNTEST
+User Instruction Active Pin Name                  : jtag_inst1_SEL
+Shift Pin Name                                    : jtag_inst1_SHIFT
+Test Clock Pin Name                               : jtag_inst1_TCK
+Test Data Pin Name                                : jtag_inst1_TDI
+Test Data Pin Name                                : jtag_inst1_TDO
+Test Mode Select Pin Name                         : jtag_inst1_TMS
+Update Pin Name                                   : jtag_inst1_UPDATE
+
+---------- JTAG Usage Summary (end) ----------

@@ -1,0 +1,104 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Compiled: Jan 16 2020.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F169" ...
+
+***** Beginning stage routing graph generation ... *****
+Finished parsing ipin pattern file '/home/wisdom/2019.3/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/wisdom/2019.3/arch/./sb_connectivity_subset.xdb'.
+Generated 1171629 RR nodes and 4443583 RR edges
+This design has 0 global control net(s). See /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.route.rpt for details.
+Routing graph took 3.94151 seconds.
+	Routing graph took 3.95 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 950.184 MB, end = 1243.44 MB, delta = 293.26 MB
+Routing graph resident set memory usage: begin = 344.032 MB, end = 637.42 MB, delta = 293.388 MB
+	Routing graph peak resident set memory usage = 637.42 MB
+***** Ending stage routing graph generation *****
+***** Beginning stage routing ... *****
+WARNING(1): There are 1778 pins with no clock driven by root clock: jtag_inst1_TCK
+Peak routing utilization for Horizontal Left: 0.701561 at (65,241)
+Peak routing utilization for Horizontal Right: 0.342308 at (48,233)
+Peak routing utilization for Vertical Down: 0.618882 at (121,164)
+Peak routing utilization for Vertical Up: 0.504428 at (47,241)
+Peak routing congestion: 0.267163 at (65,241)
+V Congestion RMS: 0.100292 STDEV: 0.045224
+H Congestion RMS: 0.083250 STDEV: 0.040190
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+Routed wire in iteration 1: 578088
+Delay frac statistics: min = 0.249970 max = 1.970487 average = 0.637881
+         1        22136              6.209               4.29
+Routed wire in iteration 2: 422547
+         2         1468              7.333               3.67
+Routed wire in iteration 3: 437681
+         3          188              7.333               1.73
+Routed wire in iteration 4: 440268
+         4            7               7.45              0.709
+Routed wire in iteration 5: 440269
+         5            0               7.45              0.513
+
+Successfully routed netlist after 5 routing iterations and 39740588 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+Serial number (magic cookie) for the routing is: 94224574
+Netlist fully routed.
+
+Successfully created FPGA route file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.route'
+Routing took 11.8657 seconds.
+	Routing took 11.86 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1243.44 MB, end = 1279.24 MB, delta = 35.8 MB
+Routing resident set memory usage: begin = 637.42 MB, end = 667.372 MB, delta = 29.952 MB
+	Routing peak resident set memory usage = 722.164 MB
+***** Ending stage routing *****
+***** Beginning stage final timing analysis ... *****
+WARNING(2): There are 1778 pins with no clock driven by root clock: jtag_inst1_TCK
+
+Maximum possible analyzed clocks frequency
+Clock Name        Period (ns)   Frequency (MHz)   Edge
+MipiTxPixelClk          7.536         132.690     (R-R)
+MipiRxPixelClk          7.570         132.092     (R-R)
+
+Geomean max period: 7.553
+
+Launch Clock    Capture Clock    Constraint (ns)   Slack (ns)    Edge
+MipiTxPixelClk   MipiTxPixelClk       10.000         2.464     (R-R)
+MipiTxPixelClk   MipiRxPixelClk       10.000         4.713     (R-R)
+MipiRxPixelClk   MipiRxPixelClk       10.000         2.430     (R-R)
+
+
+WARNING(3): There are 1778 pins with no clock driven by root clock: jtag_inst1_TCK
+final timing analysis took 0.523668 seconds.
+	final timing analysis took 0.52 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1279.24 MB, end = 1279.24 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 667.372 MB, end = 667.372 MB, delta = 0 MB
+	final timing analysis peak resident set memory usage = 722.164 MB
+***** Ending stage final timing analysis *****
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv'.
+Successfully processed interface constraints file "/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.interface.csv".
+Finished writing bitstream file /home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/work_pnr/MIPIDebug.lbf.
+Bitstream generation took 0.523052 seconds.
+	Bitstream generation took 0.52 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1279.24 MB, end = 1279.24 MB, delta = 0 MB
+Bitstream generation resident set memory usage: begin = 667.372 MB, end = 667.372 MB, delta = 0 MB
+	Bitstream generation peak resident set memory usage = 722.164 MB
+***** Ending stage bitstream generation *****
+The entire flow of EFX_PNR took 53.9831 seconds.
+	The entire flow of EFX_PNR took 53.98 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 133.756 MB, end = 1105.32 MB, delta = 971.568 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 16.548 MB, end = 493.708 MB, delta = 477.16 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 722.164 MB

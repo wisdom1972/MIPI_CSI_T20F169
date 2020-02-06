@@ -1,0 +1,1145 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2019.3.272.1.6
+[EFX-0000 INFO] Compiled: Dec  9 2019.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+INFO: ***** Beginning Analysis ... *****
+INFO: The default VHDL library search path is now "/home/wisdom/2019.3/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file '/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v' (VERI-1482)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(3): INFO: analyzing included file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/../Source/MIPI_Parameter.v' (VERI-1328)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/../Source/MIPI_Parameter.v(60): WARNING: macro 'Timing_Tx_THS_Exit_nsL8' redefined (VERI-1295)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(3): INFO: back to file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v' (VERI-2320)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v' (VERI-1482)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v(432): WARNING: empty port in module declaration (VERI-1294)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiPixelData.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITest.v' (VERI-1482)
+-- Analyzing Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v' (VERI-1482)
+INFO: Analysis took 0.178624 seconds.
+INFO: 	Analysis took 0.17 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 158.772 MB, end = 160.98 MB, delta = 2.208 MB
+INFO: Analysis resident set memory usage: begin = 39.336 MB, end = 43.316 MB, delta = 3.98 MB
+INFO: 	Analysis peak resident set memory usage = 43.316 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITest.v(80): INFO: compiling module 'MipiTest' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(19): INFO: compiling module 'MipiTxCtrl(TxPixelClkFreq_C=28'b011111011110001010010000000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(775): INFO: compiling module 'LengthCalc(NumWidth_C=8)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(775): INFO: compiling module 'LengthCalc(NumWidth_C=16,LenWidth_C=24,ValueWidth_C=16)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(926): INFO: compiling module 'MipiTypeLUT' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K(READ_WIDTH=20,WRITE_WIDTH=20,INIT_7=256'b010000000101101000000100001000010011000101000000000000000000010000010000000000000100000001011010000001000100001001000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,INIT_8=256'b0100000100000000000001000000010110100000010001000010010000100000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000010000010101010101011100000001111000000001000010001000100010010000000000000000000100000100000,INIT_9=256'b1000000000000000000010000001100110011010100000001001000000001000001000100010001010000000000000000000100000100000000000001000000010110100000010000100010001000100100000000000000000001000001000000000000010000000101101000000100001000010010000101000000000000000,INIT_A=256'b011001100110011100000000000000000001000001000000000000010000000101101000000100001000100010001001000000000000000000010000010001000100011100000001100000000001000010001000100010010000000000000000000100000101010101010111000000011110000000010000100010001000100,INIT_B=256'b0100000000000000000001000000101010101011010000000011110000000100000100010001000101000000000000000000010000001110001110010100000001010000000001000,INIT_C=256'b010010110000001100110110110100010001000100010001000000000000000000010000101010101010110100000011110000000001000100010001010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,INIT_D=256'b0100000101010101010111000000011110000000010000100010001010101100000000000000000001000001100110011010010000001001000000000100001000100011001101000000000000000000010000100000000000000100000010110100000001000100010001000100010000000000000000000100001001001,INIT_E=256'b0100000000000000000001000001001001001001110000000110011011011100001000100010001001000000000000000,INIT_F=256'b1000100010001000100000000000000000001000010000000000000010000001011010000000100010001000100010001000000000000000000010000100000000000000100000010110100000001000100010001000100010000000000000000000100001000000000000001000000101101000000010001000100010001000,INIT_10=256'b0110100000001000100010001000100010000000000000000000100001000000000000001000000101101000000010001000100010001000100000000000000000001000010000000000000010000001011010000000100010001000100010001000000000000000000010000100000000000000100000010110100000001000,INIT_11=256'b010000000000000000000100001000000000000001000000101101000000010001000100010001000100000000000000000001000010000000000000010000001)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(775): INFO: compiling module 'LengthCalc(NumWidth_C=4,LenWidth_C=16,ValueWidth_C=16)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(491): INFO: compiling module 'MipiTxOperate(TxShortFramerLen_C=8'b0101011)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(695): WARNING: expression size 32 truncated to fit in target size 8 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MIPITxProcess.v(743): WARNING: expression size 9 truncated to fit in target size 8 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiPixelData.v(20): INFO: compiling module 'MipiTxData8B' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(20): INFO: compiling module 'PRBS9GenX8' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b100001000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b100101100)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b110011000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b110001001)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b100010110)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b100111011)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(426): INFO: compiling module 'PRBS9Gen(Alignment=9'b110110000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v(18): INFO: compiling module 'MipiRxMoni' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v(415): INFO: compiling module 'MipiRxCtrl' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiPixelData.v(106): INFO: compiling module 'MipiRxData8B(RightCntWidth_C=24)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(189): INFO: compiling module 'PRBS9ChkX8(RightCntWidth_C=24)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100001000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100101100)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110011000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110001001)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100010110)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100111011)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/PRBS9.v(532): INFO: compiling module 'PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110110000)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(523): WARNING: port 'probe7' remains unconnected for this instance (VERI-1927)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(10): INFO: compiling module 'edb_top' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(804): INFO: compiling module 'edb_vio_top(NUM_PROBE_IN=6,NUM_PROBE_OUT=12,PROBE_IN0_WIDTH=24,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=16,PROBE_OUT0_WIDTH=8,PROBE_OUT1_WIDTH=16,PROBE_OUT2_WIDTH=16,PROBE_OUT3_WIDTH=12,PROBE_OUT4_WIDTH=8,PROBE_OUT5_WIDTH=3,PROBE_OUT6_WIDTH=6,PROBE_OUT7_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b0111100,PROBE_OUT1_INIT_VAL=32'b010000111000,PROBE_OUT2_INIT_VAL=32'b011110000000,PROBE_OUT3_INIT_VAL=32'b01,PROBE_OUT4_INIT_VAL=32'b01,PROBE_OUT5_INIT_VAL=32'b01,PROBE_OUT6_INIT_VAL=32'b0101010,PROBE_OUT7_INIT_VAL=32'b0,PROBE_OUT8_INIT_VAL=32'b01,PROBE_OUT9_INIT_VAL=32'b01,PROBE_OUT10_INIT_VAL=32'b0,PROBE_OUT11_INIT_VAL=32'b0)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(1361): INFO: compiling module 'vio_core(INT_WIDTH=108,OUT_WIDTH=77,PROBE_OUT_INIT_VAL=77'b0110000101010001000000010000000000010000011110000000000001000011100000111100)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(597): INFO: compiling module 'adbg_crc32' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(2119): INFO: compiling module 'syncer' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(804): INFO: compiling module 'edb_vio_top(NUM_PROBE_IN=12,NUM_PROBE_OUT=5,PROBE_IN0_WIDTH=8,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=6,PROBE_IN6_WIDTH=4,PROBE_IN8_WIDTH=18,PROBE_IN11_WIDTH=8,PROBE_OUT0_WIDTH=3,PROBE_OUT4_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b01,PROBE_OUT1_INIT_VAL=32'b01,PROBE_OUT2_INIT_VAL=32'b01,PROBE_OUT3_INIT_VAL=32'b0,PROBE_OUT4_INIT_VAL=32'b01111)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(1361): INFO: compiling module 'vio_core(INT_WIDTH=115,OUT_WIDTH=10,PROBE_OUT_INIT_VAL=10'b1111011001)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(2294): INFO: compiling module 'edb_la_top(NUM_PROBES=7,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=4,PROBE1_WIDTH=4,PROBE3_WIDTH=8,PROBE5_WIDTH=2,PROBE6_WIDTH=6)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4136): INFO: compiling module 'compare_unit(WIDTH=11'b0100,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4282): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4285): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4288): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4291): WARNING: expression size 4 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4136): INFO: compiling module 'compare_unit(WIDTH=11'b01,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4136): INFO: compiling module 'compare_unit(WIDTH=11'b01000,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4282): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4285): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4288): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4291): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4136): INFO: compiling module 'compare_unit(WIDTH=11'b010,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4282): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4285): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4288): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4291): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4136): INFO: compiling module 'compare_unit(WIDTH=11'b0110,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4282): WARNING: expression size 6 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4285): WARNING: expression size 6 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4288): WARNING: expression size 6 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4291): WARNING: expression size 6 truncated to fit in target size 1 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(4351): INFO: compiling module 'trigger_unit(WIDTH=7,PIPE=1)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(3682): INFO: compiling module 'la_biu(CAPTURE_WIDTH=26,DATA_DEPTH=4096)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(3566): INFO: compiling module 'fifo_with_read(DATA_WIDTH=26,ADDR_WIDTH=12)' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(3601): WARNING: expression size 14 truncated to fit in target size 13 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(3610): WARNING: expression size 14 truncated to fit in target size 13 (VERI-1209)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(2201): INFO: compiling module 'simple_dual_port_ram(DATA_WIDTH=26,ADDR_WIDTH=12,RAM_INIT_FILE="")' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(2723): WARNING: net 'burst_write' does not have a driver (VDB-1002)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(2770): WARNING: net 'register_conn[2][63]' does not have a driver (VDB-1002)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(675): INFO: compiling module 'debug_hub' (VERI-1018)
+/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v(496): WARNING: input port 'probe7[0]' is not connected on this instance (VDB-1013)
+INFO: Elaboration took 2.7161 seconds.
+INFO: 	Elaboration took 2.72 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 160.98 MB, end = 774.452 MB, delta = 613.472 MB
+INFO: Elaboration resident set memory usage: begin = 43.316 MB, end = 657.252 MB, delta = 613.936 MB
+INFO: 	Elaboration peak resident set memory usage = 657.252 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file '/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(45): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(59): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(75): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(95): INFO: compiling module 'EFX_MULT' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(130): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(367): INFO: compiling module 'RAMB5' (VERI-1018)
+/home/wisdom/2019.3/sim_models/maplib/efinix_maplib.v(429): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+INFO: Reading Mapping Library took 0.0100095 seconds.
+INFO: 	Reading Mapping Library took 0.01 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 774.452 MB, end = 774.452 MB, delta = 0 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 657.252 MB, end = 657.252 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 657.252 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[0]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[1]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[2]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[3]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[4]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[5]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[6]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[7]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[8]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[9]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[10]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[11]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[12]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[13]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[14]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[15]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[16]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[17]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[18]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[19]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[20]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[21]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[22]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[23]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[24]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[25]=1).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[26]=0).
+[EFX-0266 WARNING] Module Instance 'U1_VSyncLenCalc' input pin tied to constant (LenPerUnit[27]=0).
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/../Source/MipiRxProcess.v 59) Removing unconnected net : Reset_N
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0031 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2074) 'mux_231' instance is encountered with don't-care(1'bx) input, rewiring to GND.
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1368) Removing unconnected net : bscan_DRCK
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1370) Removing unconnected net : bscan_RUNTEST
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1371) Removing unconnected net : bscan_SEL
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1375) Removing unconnected net : bscan_TMS
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[44]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[43]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[42]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[41]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[40]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[39]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[38]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[37]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[36]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[35]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[34]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[33]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[32]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[31]
+[EFX-0200 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 1382) Removing unconnected net : edb_user_dr[30]
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[0].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[1].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[2].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[3].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[4].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[5].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[6].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[7].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[8].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[9].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[10].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[11].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[12].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[13].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[14].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[15].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[16].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[17].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[18].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[19].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[20].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[21].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[22].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[23].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[24].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[25].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[26].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[27].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[28].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[29].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[30].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[31].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[32].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[33].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[34].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[35].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[36].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[37].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[38].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[39].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[40].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[41].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[42].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[43].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[44].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[45].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[46].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[47].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[48].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[49].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[50].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[51].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[52].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[53].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[54].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[55].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[56].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[57].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[58].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[59].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[60].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[61].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[62].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[63].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[64].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[65].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[66].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[67].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[68].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[69].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[70].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[71].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[72].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[73].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[74].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[75].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[76].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[77].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[78].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[79].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[80].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[81].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[82].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[83].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[84].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[85].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[86].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[87].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[88].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[89].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[90].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[91].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[92].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[93].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[94].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[95].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[96].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[97].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[98].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[99].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[100].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[101].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[102].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[103].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[104].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[105].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[106].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[107].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[108].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[108].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[108].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[109].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[109].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[109].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[110].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[110].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[110].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[111].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[111].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[111].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[112].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[112].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[112].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[113].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[113].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[113].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[114].sync_probe_in_U' input pin tied to constant (RSTA=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[114].sync_probe_in_U' input pin tied to constant (RSTB=0).
+[EFX-0266 WARNING] Module Instance 'gen_probe_in_sync[114].sync_probe_in_U' input pin tied to constant (ENB=1).
+[EFX-0677 INFO] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2216) Zero initialization of uninitialized memory block 'ram'.
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2723) Re-wiring to GND non-driven net 'burst_write'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][63]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][62]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][61]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][60]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][59]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][58]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][57]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][56]'.
+[EFX-0201 WARNING] (/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/debug_top.v 2770) Re-wiring to GND non-driven net 'register_conn[2][55]'.
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 1s CPU user time : 4s CPU sys time : 0s MEM : 1098960KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1098960KB)
+[EFX-0000 INFO] ... Mapping design "MipiTest"
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in6[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in7[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in8[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in9[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in10[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in11[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in12[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in13[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in14[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in15[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in16[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in17[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in18[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in19[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in20[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in21[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in22[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in23[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in24[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in25[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in26[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in27[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in28[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in29[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in30[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in31[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in32[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in33[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in34[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in35[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in36[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in37[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in38[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in39[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in40[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in41[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in42[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in43[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in44[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in45[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in46[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in47[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in48[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in49[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in50[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in51[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in52[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in53[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in54[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in55[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in56[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in57[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in58[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in59[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in60[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in61[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in62[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiTx' input pin tied to constant (probe_in63[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in12[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in13[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in14[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in15[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in16[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in17[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in18[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in19[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in20[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in21[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in22[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in23[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in24[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in25[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in26[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in27[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in28[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in29[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in30[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in31[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in32[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in33[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in34[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in35[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in36[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in37[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in38[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in39[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in40[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in41[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in42[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in43[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in44[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in45[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in46[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in47[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in48[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in49[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in50[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in51[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in52[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in53[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in54[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in55[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in56[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in57[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in58[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in59[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in60[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in61[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in62[0]=0).
+[EFX-0266 WARNING] Module Instance 'MipiRx' input pin tied to constant (probe_in63[0]=0).
+[EFX-0266 WARNING] Module Instance 'LA_MipiRx' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'LA_MipiRx' input pin tied to constant (trig_out_ack=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[14]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[14]=0).
+[EFX-0266 WARNING] Module Instance 'edb_top_inst' input pin tied to constant (MipiRx_VidioRxVBlankTime_us[16]=0).
+[EFX-0266 WARNING] Module Instance 'edb_top_inst' input pin tied to constant (MipiRx_VidioRxVBlankTime_us[17]=0).
+[EFX-0266 WARNING] Module Instance 'edb_top_inst' input pin tied to constant (MipiRx_VidioRxVBlankTime_us[18]=0).
+[EFX-0266 WARNING] Module Instance 'edb_top_inst' input pin tied to constant (MipiRx_VidioRxVBlankTime_us[19]=0).
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=8)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=16,LenWidth_C=24,ValueWidth_C=16)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=16,LenWidth_C=24,ValueWidth_C=16)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTypeLUT" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTypeLUT" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=4,LenWidth_C=16,ValueWidth_C=16)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "LengthCalc(NumWidth_C=4,LenWidth_C=16,ValueWidth_C=16)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxOperate(TxShortFramerLen_C=8'b0101011)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxOperate(TxShortFramerLen_C=8'b0101011)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxCtrl(TxPixelClkFreq_C=28'b011111011110001010010000000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxCtrl(TxPixelClkFreq_C=28'b011111011110001010010000000)" end (Real time : 1s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100001000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100001000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100101100)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100101100)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110011000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110011000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110001001)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110001001)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100010110)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100010110)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100111011)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b100111011)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110110000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Gen(Alignment=9'b110110000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9GenX8" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9GenX8" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxData8B" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTxData8B" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxMoni" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxMoni" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxCtrl" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxCtrl" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100001000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100001000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100101100)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100101100)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110011000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110011000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110001001)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110001001)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100010110)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100010110)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100111011)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b100111011)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110110000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9Chk(RightCntWidth_C=24,Alignment=9'b110110000)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9ChkX8(RightCntWidth_C=24)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "PRBS9ChkX8(RightCntWidth_C=24)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxData8B(RightCntWidth_C=24)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiRxData8B(RightCntWidth_C=24)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "syncer" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "syncer" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1123652KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=108,OUT_WIDTH=77,PROBE_OUT_INIT_VAL=77'b0110000101010001000000010000000000010000011110000000000001000011100000111100)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=108,OUT_WIDTH=77,PROBE_OUT_INIT_VAL=77'b0110000101010001000000010000000000010000011110000000000001000011100000111100)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1124400KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=6,NUM_PROBE_OUT=12,PROBE_IN0_WIDTH=24,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=16,PROBE_OUT0_WIDTH=8,PROBE_OUT1_WIDTH=16,PROBE_OUT2_WIDTH=16,PROBE_OUT3_WIDTH=12,PROBE_OUT4_WIDTH=8,PROBE_OUT5_WIDTH=3,PROBE_OUT6_WIDTH=6,PROBE_OUT7_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b0111100,PROBE_OUT1_INIT_VAL=32'b010000111000,PROBE_OUT2_INIT_VAL=32'b011110000000,PROBE_OUT3_INIT_VAL=32'b01,PROBE_OUT4_INIT_VAL=32'b01,PROBE_OUT5_INIT_VAL=32'b01,PROBE_OUT6_INIT_VAL=32'b0101010,PROBE_OUT7_INIT_VAL=32'b0,PROBE_OUT8_INIT_VAL=32'b01,PROBE_OUT9_INIT_VAL=32'b01,PROBE_OUT10_INIT_VAL=32'b0,PROBE_OUT11_INIT_VAL=32'b0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=6,NUM_PROBE_OUT=12,PROBE_IN0_WIDTH=24,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=16,PROBE_OUT0_WIDTH=8,PROBE_OUT1_WIDTH=16,PROBE_OUT2_WIDTH=16,PROBE_OUT3_WIDTH=12,PROBE_OUT4_WIDTH=8,PROBE_OUT5_WIDTH=3,PROBE_OUT6_WIDTH=6,PROBE_OUT7_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b0111100,PROBE_OUT1_INIT_VAL=32'b010000111000,PROBE_OUT2_INIT_VAL=32'b011110000000,PROBE_OUT3_INIT_VAL=32'b01,PROBE_OUT4_INIT_VAL=32'b01,PROBE_OUT5_INIT_VAL=32'b01,PROBE_OUT6_INIT_VAL=32'b0101010,PROBE_OUT7_INIT_VAL=32'b0,PROBE_OUT8_INIT_VAL=32'b01,PROBE_OUT9_INIT_VAL=32'b01,PROBE_OUT10_INIT_VAL=32'b0,PROBE_OUT11_INIT_VAL=32'b0)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1126776KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=115,OUT_WIDTH=10,PROBE_OUT_INIT_VAL=10'b1111011001)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "vio_core(INT_WIDTH=115,OUT_WIDTH=10,PROBE_OUT_INIT_VAL=10'b1111011001)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1126776KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=12,NUM_PROBE_OUT=5,PROBE_IN0_WIDTH=8,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=6,PROBE_IN6_WIDTH=4,PROBE_IN8_WIDTH=18,PROBE_IN11_WIDTH=8,PROBE_OUT0_WIDTH=3,PROBE_OUT4_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b01,PROBE_OUT1_INIT_VAL=32'b01,PROBE_OUT2_INIT_VAL=32'b01,PROBE_OUT3_INIT_VAL=32'b0,PROBE_OUT4_INIT_VAL=32'b01111)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_vio_top(NUM_PROBE_IN=12,NUM_PROBE_OUT=5,PROBE_IN0_WIDTH=8,PROBE_IN1_WIDTH=16,PROBE_IN2_WIDTH=16,PROBE_IN3_WIDTH=20,PROBE_IN4_WIDTH=16,PROBE_IN5_WIDTH=6,PROBE_IN6_WIDTH=4,PROBE_IN8_WIDTH=18,PROBE_IN11_WIDTH=8,PROBE_OUT0_WIDTH=3,PROBE_OUT4_WIDTH=4,PROBE_OUT0_INIT_VAL=32'b01,PROBE_OUT1_INIT_VAL=32'b01,PROBE_OUT2_INIT_VAL=32'b01,PROBE_OUT3_INIT_VAL=32'b0,PROBE_OUT4_INIT_VAL=32'b01111)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0110,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0110,PIPE=1)" end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=7,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(WIDTH=7,PIPE=1)" end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(DATA_WIDTH=26,ADDR_WIDTH=12,RAM_INIT_FILE="")" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: ram
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(DATA_WIDTH=26,ADDR_WIDTH=12,RAM_INIT_FILE="")" end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=26,ADDR_WIDTH=12)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=26,ADDR_WIDTH=12)" end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=26,DATA_DEPTH=4096)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=26,DATA_DEPTH=4096)" end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 1127832KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(NUM_PROBES=7,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=4,PROBE1_WIDTH=4,PROBE3_WIDTH=8,PROBE5_WIDTH=2,PROBE6_WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(NUM_PROBES=7,DATA_DEPTH=4096,INPUT_PIPE_STAGES=1,PROBE0_WIDTH=4,PROBE1_WIDTH=4,PROBE3_WIDTH=8,PROBE5_WIDTH=2,PROBE6_WIDTH=6)" end (Real time : 12s CPU user time : 17s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" end (Real time : 0s CPU user time : 17s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" end (Real time : 3s CPU user time : 19s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTest" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "MipiTest" end (Real time : 4s CPU user time : 23s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 24s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis begin
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 1s CPU user time : 25s CPU sys time : 0s MEM : 2115068KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 3451, ed: 11565, lv: 7
+[EFX-0000 INFO] ... LUT mapping end (Real time : 17s CPU user time : 41s CPU sys time : 1s MEM : 2115068KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 1s CPU user time : 42s CPU sys time : 1s MEM : 2115068KB)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis end (Real time : 19s CPU user time : 42s CPU sys time : 1s MEM : 2115068KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 1s CPU user time : 43s CPU sys time : 1s MEM : 2115068KB)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port jtag_inst1_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port jtag_inst1_TMS is unconnected and will be removed
+WARNING: Input/Inout Port PllLocked[0] is unconnected and will be removed
+WARNING: Input/Inout Port MipiTxEscClk is unconnected and will be removed
+WARNING: Input/Inout Port MipiRxCalClk is unconnected and will be removed
+WARNING: Input/Inout Port MipiRx_ULPS_CLK is unconnected and will be removed
+WARNING: Input/Inout Port MipiRx_ULPS[3] is unconnected and will be removed
+WARNING: Input/Inout Port MipiRx_ULPS[2] is unconnected and will be removed
+WARNING: Input/Inout Port MipiRx_ULPS[1] is unconnected and will be removed
+WARNING: Input/Inout Port MipiRx_ULPS[0] is unconnected and will be removed
+INFO: Found 11 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 2.13196 seconds.
+INFO: 	VDB Netlist Checker took 2.13 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 2144.1 MB, end = 2144.1 MB, delta = 0 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 2037.05 MB, end = 2037.05 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 2115.07 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'MipiTest' to Verilog file '/home/wisdom/2019.3/project/MIPIDebug1.6/Efinity/outflow/MIPIDebug.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	1021
+[EFX-0000 INFO] EFX_LUT4        : 	3009
+[EFX-0000 INFO] EFX_MULT        : 	4
+[EFX-0000 INFO] EFX_FF          : 	3730
+[EFX-0000 INFO] EFX_RAM_5K      : 	27
+[EFX-0000 INFO] EFX_GBUFCE      : 	3
+[EFX-0000 INFO] =============================== 

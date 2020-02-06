@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<efx:tool_report xmlns:efx="http://www.efinixinc.com/tool_report" date="2020-02-06T12:28:36+0800" project="MIPIDebug" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/tool_report tool_report.xsd">
+
+  <efx:group name="Core Resource">
+    <efx:group_data name="Inputs" severity="info" value="116 / 487"/>
+    <efx:group_data name="Outputs" severity="info" value="230 / 465"/>
+    <efx:group_data name="Clocks" severity="info" value="5 / 16"/>
+    <efx:group_data name="Logic Elements" severity="info" value="6587 / 19728"/>
+    <efx:group_data name="Memory Blocks" severity="info" value="27 / 204"/>
+    <efx:group_data name="Multipliers" severity="info" value="4 / 36"/>
+  </efx:group>
+
+  <efx:group name="System Resource">
+    <efx:group_data info="runtime" name="packing" severity="info" value="0|0:0:2"/>
+    <efx:group_data info="runtime" name="placement" severity="info" value="0|0:0:30"/>
+    <efx:group_data info="runtime" name="routing" severity="info" value="0|0:0:11"/>
+    <efx:group_data info="peak_rr" name="Peak RSS" severity="info" value="722.164 MB"/>
+  </efx:group>
+
+  <efx:group name="Interface">
+    <efx:group_data name="Missing Interface Pins" severity="info" value="8"/>
+    <efx:group_data name="Unassigned Core Pins" severity="info" value="0"/>
+  </efx:group>
+
+  <efx:group name="Timing">
+    <efx:group_data name="Least Slack" severity="info" value="2.43 ns"/>
+    <efx:group_data name="MipiTxPixelClk" severity="info" value="132.690 MHz"/>
+    <efx:group_data name="MipiRxPixelClk" severity="info" value="132.092 MHz"/>
+  </efx:group>
+
+</efx:tool_report>

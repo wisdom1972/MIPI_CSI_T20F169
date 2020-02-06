@@ -1,0 +1,93 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Date: Thu Feb  6 12:27:43 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F169
+Top-level Entity Name: MIPIDebug
+
+---------- Resource Summary (begin) ----------
+Inputs: 116 / 487 (23.82%)
+Outputs: 230 / 465 (49.46%)
+Clocks: 5 / 16 (31.25%)
+Logic Elements: 6587 / 19728 (33.39%)
+	LE: LUTs/Adders: 4032 / 19728 (20.44%)
+	LE: Registers: 3730 / 13920 (26.80%)
+Memory Blocks: 27 / 204 (13.24%)
+Multipliers: 4 / 36 (11.11%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                                                                                                                                              NAME                                                                                                                                                                              | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                                                                                                                          U2_MipiTxCtrl/U1_MipiTypeLUT/U4_PixelTypeLut                                                                                                                                                          | SDP  |     20     |     20      | READ_FIRST |   false    |
+|                                                                                                                                 edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_1(10)                                                                                                                                 | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                                           edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_1(10)                                                                                                                            | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                                      edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_1(10)                                                                                                                      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                                edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_1(10)                                                                                                                 | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                           edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_1(10)                                                                                                           | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                     edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_1(10)                                                                                                      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                                edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_1(10)                                                                                                | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                          edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_1(10)                                                                                           | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                                     edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_1(10)                                                                                     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                               edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_1(10)                                                                                | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                          edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_1(10)                                                                          | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                                    edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_1(10)                                                                     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                               edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_1(10)                                                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                         edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_1(10)                                                          | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                                    edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_1(10)                                                    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                              edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_1(10)                                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                         edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_1(10)                                         | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                                    edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_1(10)                                    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                               edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_1(10)                               | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                          edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_1(10)                          | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                     edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_1(10)                     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|                edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_1(10)                | SDP  |     1      |      1      | READ_FIRST |   false    |
+|           edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_1(10)           | SDP  |     1      |      1      | READ_FIRST |   false    |
+|      edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_1(10)      | SDP  |     1      |      1      | READ_FIRST |   false    |
+| edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(10) | SDP  |     1      |      1      | READ_FIRST |   false    |
+| edb_top_inst/LA_MipiRx/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__12_25(01)__12_24(01)__12_23(01)__12_22(01)__12_21(01)__12_20(01)__12_19(01)__12_18(01)__12_17(01)__12_16(01)__12_15(01)__12_14(01)__12_13(01)__12_12(01)__12_11(01)__12_10(01)__12_9(01)__12_8(01)__12_7(01)__12_6(01)__12_5(01)__12_4(01)__12_3(01)__12_2(01)__12_1(01) | SDP  |     1      |      1      | READ_FIRST |   false    |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+
+---------- DSP Block Information (begin) ----------
+
++-----------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+|         NAME          | A_REG | B_REG | O_REG | RSTA_SYNC | RSTA_VALUE | RSTB_SYNC | RSTB_VALUE | RSTO_SYNC | RSTO_VALUE |
++-----------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+| U2_MipiTxCtrl/mult_35 | false | false | true  |   false   |   false    |   false   |   false    |   true    |   false    |
+| U2_MipiTxCtrl/mult_52 | true  | false | true  |   true    |   false    |   false   |   false    |   true    |   false    |
+| U2_MipiTxCtrl/mult_62 | true  | true  | true  |   true    |   false    |   true    |   false    |   true    |   false    |
+| U2_MipiTxCtrl/mult_3  | false | false | true  |   false   |   false    |   false   |   false    |   true    |   false    |
++-----------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+
+----------- DSP Block Information (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 2 seconds
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|    jtag_inst1_DRCK     |    Input     |
+|     jtag_inst1_TMS     |    Input     |
+|   jtag_inst1_RUNTEST   |    Input     |
+|    MipiRx_ULPS_CLK     |    Input     |
+|     MipiRx_ULPS[0]     |    Input     |
+|     MipiRx_ULPS[1]     |    Input     |
+|     MipiRx_ULPS[2]     |    Input     |
+|     MipiRx_ULPS[3]     |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 30 seconds

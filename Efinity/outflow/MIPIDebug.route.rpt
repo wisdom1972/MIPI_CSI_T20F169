@@ -1,0 +1,12 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272.1.6 
+Date: Thu Feb  6 12:28:19 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F169
+Top-level Entity Name: MIPIDebug
+Elapsed time for routing: 0 hours 0 minutes 11 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 53 seconds

@@ -1,0 +1,235 @@
+{
+    "debug_cores": [
+        {
+            "probes": [
+                {
+                    "width": 8,
+                    "name": "ConfigTxFrameRate",
+                    "init": "0x3c"
+                },
+                {
+                    "width": 16,
+                    "name": "ConfigTxVertPixelNumber",
+                    "init": "0x438"
+                },
+                {
+                    "width": 16,
+                    "name": "ConfigTxHoriPixelNumber",
+                    "init": "0x780"
+                },
+                {
+                    "width": 12,
+                    "name": "ConfigTxVBlankTime_us",
+                    "init": "0x1"
+                },
+                {
+                    "width": 8,
+                    "name": "ConfigTxHBlankTime_us",
+                    "init": "0x1"
+                },
+                {
+                    "width": 3,
+                    "name": "configTxLanesNumber",
+                    "init": "0x1"
+                },
+                {
+                    "width": 6,
+                    "name": "ConfigPixelDataType",
+                    "init": "0x2a"
+                },
+                {
+                    "width": 4,
+                    "name": "ConfigTxVCEnable",
+                    "init": "0x0"
+                },
+                {
+                    "width": 1,
+                    "name": "ControlTxDPHYReset",
+                    "init": "0x1"
+                },
+                {
+                    "width": 1,
+                    "name": "ControlTxCSIReset",
+                    "init": "0x1"
+                },
+                {
+                    "width": 1,
+                    "name": "ControlTxDisable",
+                    "init": "0x0"
+                },
+                {
+                    "width": 1,
+                    "name": "ConfigTxFramerMode",
+                    "init": "0x0"
+                },
+                {
+                    "width": 24,
+                    "name": "ParamTxVertSyncLength_Cycle",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "ParamTxHoriSyncLength_Cycle",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "paramTxDataValidLength_Cycle",
+                    "init": null
+                },
+                {
+                    "width": 20,
+                    "name": "paramTxVertBlankLength_Cycle",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "paramTxHoriBlankLength_Cycle",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "RealTxHoriPixelNumber",
+                    "init": null
+                }
+            ],
+            "name": "MipiTx",
+            "type": "vio"
+        },
+        {
+            "probes": [
+                {
+                    "width": 8,
+                    "name": "VidioRxFrameRate",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "VidioRxVertPixeNumber",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "VidioRxHoriPixeNumber",
+                    "init": null
+                },
+                {
+                    "width": 20,
+                    "name": "VidioRxVBlankTime_us",
+                    "init": null
+                },
+                {
+                    "width": 16,
+                    "name": "VidioRxHBlankTime_us",
+                    "init": null
+                },
+                {
+                    "width": 3,
+                    "name": "ConfigRxLanesNumber",
+                    "init": "0x1"
+                },
+                {
+                    "width": 6,
+                    "name": "StaRxDataType",
+                    "init": null
+                },
+                {
+                    "width": 4,
+                    "name": "StateRxVCActive",
+                    "init": null
+                },
+                {
+                    "width": 1,
+                    "name": "ControlRxDPHYReset",
+                    "init": "0x1"
+                },
+                {
+                    "width": 1,
+                    "name": "ControlRxCSIReset",
+                    "init": "0x1"
+                },
+                {
+                    "width": 1,
+                    "name": "StateRxChannelActive",
+                    "init": null
+                },
+                {
+                    "width": 1,
+                    "name": "ControlRxErrorClear",
+                    "init": "0x0"
+                },
+                {
+                    "width": 18,
+                    "name": "StateRxError",
+                    "init": null
+                },
+                {
+                    "width": 4,
+                    "name": "ConfigRxVCEnable",
+                    "init": "0xf"
+                },
+                {
+                    "width": 1,
+                    "name": "StateRxReslutionChange",
+                    "init": null
+                },
+                {
+                    "width": 1,
+                    "name": "StateRxStateChange",
+                    "init": null
+                },
+                {
+                    "width": 8,
+                    "name": "StateRxDataRight",
+                    "init": null
+                }
+            ],
+            "name": "MipiRx",
+            "type": "vio"
+        },
+        {
+            "probes": [
+                {
+                    "width": 4,
+                    "name": "MipiRxVSync",
+                    "probe_type": 1
+                },
+                {
+                    "width": 4,
+                    "name": "MipiRxHSync",
+                    "probe_type": 1
+                },
+                {
+                    "width": 1,
+                    "name": "MipiRxDValid",
+                    "probe_type": 1
+                },
+                {
+                    "width": 8,
+                    "name": "MipiRxData",
+                    "probe_type": 1
+                },
+                {
+                    "width": 1,
+                    "name": "MipiRxError",
+                    "probe_type": 1
+                },
+                {
+                    "width": 2,
+                    "name": "MipiRxVC",
+                    "probe_type": 1
+                },
+                {
+                    "width": 6,
+                    "name": "MipiRxDataType",
+                    "probe_type": 1
+                }
+            ],
+            "name": "LA_MipiRx",
+            "trigin_en": false,
+            "type": "la",
+            "trigout_en": false,
+            "data_depth": 4096
+        }
+    ]
+}
