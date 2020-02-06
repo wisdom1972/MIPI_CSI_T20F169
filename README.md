@@ -108,16 +108,17 @@ Other features :
 ## Documentation
 
 系统中的文档参考了，注册Efinix用户后， 可以下载更加详细的应用指南
-在application note目录里有应用解释
-
-- an010-using-internal-reconfiguration-feature-v1.0.pdf（需注册用户）
 
 
-- Efiniy多镜像原理及用途.pdf  
-- T20MIPIEVB.jpg  
+- MIPI_Demo_UserGuide_1V5.pdf
+- MIPI parameter and waveform.pdf
 
+- MIPI_Demo_UserGuide_1V5.pdf, 工程使用说明  
+- MIPI parameter and waveform.pdf，　参数设定和波形说明
 
-- 19-9-9：V1.1
+```
+
+ 19-9-9：V1.1
 
 Release第一个版本
 功能：
@@ -184,36 +185,24 @@ Release第一个版本
 1、调整了目录结构，方便开Debuger;
 2、完善了SDC
 
+```
 
 ## Project Verilog file list
 
-- helleoworld.v  
-
-每个设计镜像就是改变helloworld.v中的DELAY_SIZE
+- it is reference to MIPI_Demo_UserGuide_1V5.pdf
+- 参考文档说明
 
 
 ## Verilog parameter
 
-- CBSEL 就是imag选择的管脚，T4,T8的是将其外接的
-- 分别改动如下代码中的**DELAY_SIZE** 为8,10,12,14
-- 每次改动重新编译， 生成一个新的hex文件， 在outflow目录下
-
-```verilog
-
-module helloworld (led, clk, rstn);//reverse);
-   parameter DELAY_SIZE = 10; //12 in normal, 14 is slow,10 is quick,8 is fast
-   parameter WIDTH = 5;
-
-```
-
-
+- 参考　MIPI parameter and waveform.pdf  
 
 
 ## Update
 
--Feb-4-2020, test all code with Efinity Ver 2019.3.272
+-Feb-6-2020, test all code with Efinity Ver 2019.3.272
 
- Tester by Ben Chen in Windows, test in T8F81 EVB
+ Tester by Ben Chen in Windows, test in T20MIPIEVB
 
  Compiler by Wisdom Zhang in Ubuntu16
 
@@ -222,7 +211,7 @@ module helloworld (led, clk, rstn);//reverse);
 
 ## Acknowledge
 
-Project Test by Ben Chen
+Project contributor is major from Richard Zhu
 Project upload by Wisdom Zhang
 
 Anything question: email: 909614802 at qq dot com
